@@ -1,0 +1,97 @@
+.hidden
+{
+	display: none;
+}
+
+#bgColor
+{
+	background: #C42026;
+}
+
+#curve
+{
+	position: fixed;
+	top: 90px;
+
+	-webkit-mix-blend-mode: overlay;
+	-moz-mix-blend-mode: overlay;
+	-o-mix-blend-mode: overlay;
+	mix-blend-mode: overlay;
+}
+
+/*Login*/
+#loginScreen
+{
+	margin-left: 30px;
+}
+
+.loginLabel
+{
+	font-family: 'robotothin';
+	color: #ffffff;
+	font-size: 1.375em;
+}
+
+.loginInput
+{
+	font-family: 'robotothin';
+	margin-bottom: 15px;
+	margin-top: 15px;
+	color: #ffffff;
+	width:90%;
+	border-radius: 8px;
+	
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	-o-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+}
+
+.loginInput[type="text"], .loginInput[type="password"]
+{
+	padding-left: 15px;
+	height: 51px;
+	font-size: 1.1em;
+}
+
+.forgotPass
+{
+	font-family: 'robotoitalic';
+	font-size: 0.875em;
+	color: #ffffff;
+	float: right;
+	padding-right: 45px;
+	letter-spacing: 0.5px;
+}
+
+#login
+{
+	font-family: 'robotothin';
+	opacity: 0.63;
+	background: #000000;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Greeting*/
