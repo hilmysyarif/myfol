@@ -24,6 +24,7 @@ var MyFol = angular.module('MyFol', ['ionic', 'ui.router'])
     }
     if(window.StatusBar) {
       StatusBar.styleDefault();
+
     }
   });
 })
@@ -34,10 +35,19 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
       url: '/login',
       templateUrl: 'partials/login/login.html',
       controller: 'LoginCtrl'
+    })
+    .state('greeting', {
+      url: '/greeting',
+      templateUrl: 'partials/login/greeting/greeting.html',
+      controller: 'GreetingCtrl'
     });
     $urlRouterProvider.otherwise('/login');
 }]);
 
 MyFol.controller('LoginCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
+
+MyFol.controller('GreetingCtrl', ['$scope', '$http', function($scope, $http){
   
 }]);
