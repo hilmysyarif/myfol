@@ -40,6 +40,21 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
       url: '/greeting',
       templateUrl: 'partials/login/greeting/greeting.html',
       controller: 'GreetingCtrl'
+    })
+    .state('newstudent', {
+      url: '/newstudent',
+      templateUrl: 'partials/new/newstudent.html',
+      controller: 'NewStudentCtrl'
+    })
+    .state('tutorials', {
+      url: '/tutorials',
+      templateUrl: 'partials/return/tutorials.html',
+      controller: 'TutorialsCtrl'
+    })
+    .state('returningstudent', {
+      url: '/returningstudent',
+      templateUrl: 'partials/return/returningstudent.html',
+      controller: 'ReturningStudentCtrl'
     });
     $urlRouterProvider.otherwise('/login');
 }]);
@@ -51,3 +66,18 @@ MyFol.controller('LoginCtrl', ['$scope', '$http', function($scope, $http){
 MyFol.controller('GreetingCtrl', ['$scope', '$http', function($scope, $http){
   
 }]);
+
+MyFol.controller('NewStudentCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
+
+MyFol.controller('TutorialsCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
+
+MyFol.controller('ReturningStudentCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
+
+
+

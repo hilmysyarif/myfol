@@ -88,26 +88,342 @@
 
 /*Greeting*/
 
+#greeting
+{
+	margin-top: 80px;
+}
+
+#greetingBeg, #greetingEnd
+{
+	background: rgba(0,0,0,0.69);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	border-radius: 8px;
+	width: 70%;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	margin-left: 60px;
+}
+
+#greetingBeg h4, #greetingEnd h4
+{
+	font-family: 'robotothin';
+	color: #ffffff;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+#greetingInputs
+{
+	margin-left: 60px;
+}
+
+#newstudent, #returningstudent
+{
+	border: none;
+	background: rgba(0,0,0,0.69);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	border-radius: 8px;
+	width:80%;
+	color: #ffffff;
+	font-family: 'robotothin';
+	font-size: 1.25em;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-bottom: 34px;
+}
+
+.underline
+{
+	text-decoration: none;
+}
+
+/*New Student*/
+#saveContainer
+{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	position: relative;
+	left: 275px;
+}
+
+#saveBut
+{
+	border: none;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	border-radius: 8px;
+	color: #ffffff;
+	font-family: 'robotothin';
+	font-size: 1.3em;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+#createProfile
+{
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	background: rgba(0,0,0,0.69);
+	width: 90%;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 15px;
+	padding-bottom: 8px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#createProfile h2
+{
+	color: #ffffff;
+	font-family: 'robotothin';
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#fillOutProfile
+{
+	margin-left: 20px;
+}
+
+.profileLabel
+{
+	font-family: 'robotolight';
+	color: #ffffff;
+}
+
+.profileInput
+{
+	width:94%;
+	border-radius: 8px;
+	font-family: 'robotolight';
+	margin-top: 10px;
+
+	-webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	-o-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+
+}
+
+.profileInput[type="text"]
+{
+	padding-left: 15px;
+	height: 35px;
+	font-size: 1em;
+}
+
+.profileInputFile[type="file"]
+{
+	font-family: 'robotolight';
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/*Tutorials*/
 
 
+/*Returning Student*/
 
+/*Main Top Header For My FOL*/
+.mainHeader
+{
+	background: rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	margin-top: 30px;
+	height: 65px;
+}
 
+.mainHeader h2
+{
+	font-family: 'robotothin';
+	color: #ffffff;
+	font-size: 1.8em;
+	width: 50%;
+	padding-left: 15px;
+	position: relative;
+	top: 15px;
+}
 
+.mainIcons
+{
+	position: relative;
+	left: 265px;
+	bottom: 27px;
+}
 
+.alert
+{
+	width: 6%;
+	margin-right: 20px;
+}
 
+.calendar
+{
+	width: 7%;
+	margin-right: 20px;
+}
 
+.settings
+{
+	width: 7%;
+	margin-right: 20px;
+}
 
+.bg1
+{
+	background: #E0242A;
+	height: 60px;
+	margin-top: 15px;
+	z-index: -2;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.50);
+	overflow: hidden;
+}
 
+.item
+{
+	background: rgba(155, 155, 155, 0.29);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.50);
+	position: relative;
+	bottom: 60px;
+	border: none;
+}
 
+#navCont
+{
+	overflow: hidden;
+	height: 29px;
+}
 
+.mainNav
+{
+	z-index: 1;
+	height: 30px;
+}
 
+#mainNav .scroll-bar-h 
+{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+	display: none;
+}
 
+#mainNav .scroll-bar 
+{
+    position: static;
+    z-index: 1;
+	display: none;
+}
 
+.scroll-bar-indicator.scroll-bar-fade-out 
+{
+    opacity: 0;
+	display: none;
+}
 
+.scroll-bar-h .scroll-bar-indicator 
+{
+    height: 0;
+	display: none;
+}
 
+.scroll-bar-indicator 
+{
+    position: absolute;
+    border-radius: 4px;
+    background: rgba(155, 155, 155, 0.29);
+    opacity: 1;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+	display: none;
+}
 
+#mainNav a
+{
+	text-decoration: none;
+}
 
+.links
+{
+	font-family: 'pt_sans_narrowregular';
+	color: #ffffff;
+	font-size: 1.5em;
+	position: relative;
+	top: 5px;
+	margin-right: 25px;
+}
 
+#welcome
+{
+	background: rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	height: 65px;
+	position: relative;
+	bottom: 45px;
+}
+
+#welcome h2
+{
+	font-family: 'pt_sansbold';
+	color: #ffffff;
+	font-size: 1.625em;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#welcomeMessage
+{
+	background: rgba(155, 155, 155, 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+	bottom: 30px;
+}
+
+#welcomeMessage h3
+{
+	font-family: 'robotomedium';
+	font-size: 1.125em;
+	padding-bottom: 12px;
+}
+
+#welcomeMessage p
+{
+	font-family: 'robotolight';
+	font-size: 1em;
+}
+
+.homeLinks
+{
+	position: relative;
+	top: 48px;
+}
+
+.homeLinks .bgColorHome a
+{
+	background: rgba(155, 155, 155, 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+}
+
+.homeItem
+{
+
+}
 
 
 
