@@ -49,12 +49,37 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
     .state('tutorials', {
       url: '/tutorials',
       templateUrl: 'partials/return/tutorials.html',
-      controller: 'TutorialsCtrl'
+      controller: 'NewTutorialCtrl'
     })
     .state('returningstudent', {
       url: '/returningstudent',
       templateUrl: 'partials/return/returningstudent.html',
       controller: 'ReturningStudentCtrl'
+    })
+    .state('courses', {
+      url: '/courses',
+      templateUrl: 'partials/return/courses.html',
+      controller: 'CoursesCtrl'
+    })
+    .state('courseshome', {
+      url: '/courseshome',
+      templateUrl: 'partials/courses/courseshome.html',
+      controller: 'CoursesHomeCtrl'
+    })
+    .state('classlist', {
+      url: '/classlist',
+      templateUrl: 'partials/courses/classlist.html',
+      controller: 'ClasslistCtrl'
+    })
+    .state('calendar', {
+      url: '/calendar',
+      templateUrl: 'partials/return/calendar.html',
+      controller: 'CalendarCtrl'
+    })
+    .state('settings', {
+      url: '/settings',
+      templateUrl: 'partials/return/settings.html',
+      controller: 'SettingsCtrl'
     });
     $urlRouterProvider.otherwise('/login');
 }]);
@@ -71,13 +96,31 @@ MyFol.controller('NewStudentCtrl', ['$scope', '$http', function($scope, $http){
   
 }]);
 
-MyFol.controller('TutorialsCtrl', ['$scope', '$http', function($scope, $http){
-  
+MyFol.controller('NewTutorialsCtrl', ['$scope', '$http', function($scope, $http){
+  //tutorial will parse out json from my codeigniter folder
 }]);
 
 MyFol.controller('ReturningStudentCtrl', ['$scope', '$http', function($scope, $http){
   
 }]);
 
+MyFol.controller('CoursesCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
 
+MyFol.controller('CoursesHomeCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
+
+MyFol.controller('ClasslistCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
+
+MyFol.controller('CalendarCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
+
+MyFol.controller('SettingsCtrl', ['$scope', '$http', function($scope, $http){
+  
+}]);
 
