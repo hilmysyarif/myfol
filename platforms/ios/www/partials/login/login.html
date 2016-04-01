@@ -1,0 +1,20 @@
+<!--Login Screen-->
+
+<ion-content>
+
+<form ng-submit="loginForm()" id="loginScreen">
+	<h2 class="hidden">Login Form</h2>
+	<label class="loginLabel" for="username">Username :</label>
+	<input class="loginInput" type="text" ng-model="user.username">
+	<span ng-show="errorUsername">{{errorUsername}}</span>
+	<br>
+	<br>
+	<label class="loginLabel" for="password">Password :</label>
+	<input class="loginInput" type="password" ng-model="user.password">
+	<span ng-show="errorPassword">{{errorPassword}}</span>
+	<a class="forgotPass">Forgot Password?</a>
+	<br>
+	<span class="underline"><input type="submit" id="login" value="Login"></span>
+</form>
+
+</ion-content>

@@ -3,7 +3,8 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-var MyFol = angular.module('MyFol', ['ionic', 'ui.router'])
+var MyFol = angular.module('MyFol', ['ionic', 'ui.router', 'ngCordova'])
+ .constant('LoginUrl', '')
 
 .run(function($ionicPlatform) {
 
@@ -28,6 +29,9 @@ var MyFol = angular.module('MyFol', ['ionic', 'ui.router'])
     }
   });
 })
+
+
+// State Provider
 
 MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -84,8 +88,28 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
     $urlRouterProvider.otherwise('/login');
 }]);
 
-MyFol.controller('LoginCtrl', ['$scope', '$http', function($scope, $http){
+
+
+//Controllers
+
+MyFol.controller('LoginCtrl', ['$scope', '$http', '$state', function($scope, $http, $state){
   
+  $scope.user = {
+    username: '',
+    password: ''
+  };
+  
+  //headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+ $scope.loginForm = function(){
+   console.log('works');
+    $http.post('http://localhost:8888/myfol/User/login', $scope.user);
+    $state.go('greeting');
+    console.log($scope.user.username);
+  };
+    //$http.post('User/login').success(function(data){
+    //$scope.login = data;
+    //console.log($scope.login);
+  //});
 }]);
 
 MyFol.controller('GreetingCtrl', ['$scope', '$http', function($scope, $http){

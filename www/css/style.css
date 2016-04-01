@@ -365,7 +365,7 @@
 	margin-right: 25px;
 }
 
-#welcome
+.welcome
 {
 	background: rgba(0,0,0,0.5);
 	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
@@ -374,7 +374,7 @@
 	bottom: 45px;
 }
 
-#welcome h2
+.welcome h2
 {
 	font-family: 'pt_sansbold';
 	color: #ffffff;
@@ -382,6 +382,14 @@
 	text-align: center;
 	padding-top: 20px;
 }
+
+.mainHeading h2
+{
+	font-family: 'robotothin';
+	font-size: 1.425em;
+}
+
+
 
 #welcomeMessage
 {
@@ -414,14 +422,30 @@
 	top: 48px;
 }
 
-.homeLinks .bgColorHome a
+.settingLinks
+{
+	position: relative;
+	top: 30px;
+}
+
+.homeLinks .bgColorHome a, .settingLinks .bgColorSetting a
 {
 	background: rgba(255, 255, 255, 0.5);
 	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	font-family: 'pt_sansregular';
+	padding-top: 22px;
+	padding-bottom: 22px;
 }
 
-.homeLinks .bgColorHome .homeItem
+.homeLinks .bgColorHome h2, .settingLinks .bgColorSetting h2
+{
+	font-family: 'pt_sansregular';
+	font-size: 1.2em;
+}
+
+.homeLinks .settingLinks .bgColorHome .bgColorSetting .homeItem .settingItem
 {
 	color: #000;
 }
+
 
