@@ -1,0 +1,57 @@
+[  
+   {  
+      "courses_id":"1",
+      "courses_name":"Advanced Web Technologies 2",
+      "courses_codename":"IMS12 - MMED - 6007 - 16W",
+      "courses_desc":"Extending topics introduced in MMED 6001, this course covers more advanced topics in the technologies for developing dynamic Web applications, and facilitates the development of student thesis projects. The course is a combination of lecture\/presentation and seminar sessions to facilitate the discussion and development of year-end projects. Topics and projects from MMED 6006 will also be integrated into the content for this course.",
+      "courses_code":"1",
+      "courses_year":"1",
+      "courses_semesterterm":"2",
+      "courses_program":"1",
+      "courses_coursecolour":"1"
+   },
+   {  
+      "courses_id":"2",
+      "courses_name":"Advanced Multimedia Technologies 2",
+      "courses_codename":"IMS12 - MMED - 6009 - 16W",
+      "courses_desc":"This course will further explore the use of Adobe Air in the development of Desktop and Mobile applications and the student will be expected to have an application published by the end of the semester.",
+      "courses_code":"1",
+      "courses_year":"1",
+      "courses_semesterterm":"2",
+      "courses_program":"1",
+      "courses_coursecolour":"5"
+   },
+   {  
+      "courses_id":"3",
+      "courses_name":"Advanced Streaming Technologies 2",
+      "courses_codename":"IMS12 - MMED - 6006 - 16W",
+      "courses_desc":"Extending topics introduced in MMED 6005, this course covers more advanced topics in Flash-based technologies for developing dynamic Web applications, and facilitates the development of individuals students' thesis projects. The course is a combination of lecture\/presentation and seminar sessions to facilitate the discussion and development of year-end projects. Topics and projects from MMED 6007 will also be integrated into the content for this course.",
+      "courses_code":"1",
+      "courses_year":"1",
+      "courses_semesterterm":"2",
+      "courses_program":"1",
+      "courses_coursecolour":"3"
+   },
+   {  
+      "courses_id":"4",
+      "courses_name":"Visual Communications 2",
+      "courses_codename":"IMS12 - MMED - 6008 - 16W",
+      "courses_desc":"Continuation of Visual Communications 1. This course consists of a greater integration with other areas of the MMDP Post program with a focus on a self directed project with advisor.",
+      "courses_code":"1",
+      "courses_year":"1",
+      "courses_semesterterm":"2",
+      "courses_program":"1",
+      "courses_coursecolour":"4"
+   },
+   {  
+      "courses_id":"5",
+      "courses_name":"Interactive Story & Concept 2",
+      "courses_codename":"IMS12 - MMED - 6003 - 16W",
+      "courses_desc":"This course is based on the tracking of the design document created in the previous course as part of the Thesis Project.",
+      "courses_code":"1",
+      "courses_year":"1",
+      "courses_semesterterm":"2",
+      "courses_program":"1",
+      "courses_coursecolour":"2"
+   }
+]

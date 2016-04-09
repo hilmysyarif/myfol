@@ -51,7 +51,7 @@ class UserModel extends CI_Model {
 
 	//Login Authenticate
 
-	public function authenticateUser($str){
+	public function authenticateUser($str, $id = FALSE){
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
 		$query = $this->db->get_where('tbl_user', array('user_username' => $username, 'user_password' => $password));

@@ -3,19 +3,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
 
-	public function __construct($config = 'rest'){
+	public function __construct(){
 		
-		header('Access-Control-Allow-Origin: *');
-    	header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+  	header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+    $method = $_SERVER['REQUEST_METHOD'];
+    if($method == "OPTIONS") {
+        die();
+    }
 
 		parent::__construct();
 
 		$this->load->model('UserModel');
 	}
 
-	public function login($str){
+	public function login($str=NULL){
 		//will show the login page for users
-		//$data = json_decode(file_get_contents('php://input'), TRUE);
+		//$ = json_decode(file_get_contents('php://input'), TRUE);
 		//$this->UserModel->authenticateUser($data);
 		//echo $this->input->post('username');
 		//$this->UserModel->authenticateUser();
@@ -26,27 +31,9 @@ class User extends CI_Controller {
 		
 		if($this->input->post('login')){
 
-			if($this->UserModel->authenticateUser()){
+			if($this->UserModel->authenticateUser($data)){
 
 				$data['authuser'] = $this->UserModel->authenticateUser();
-				/*$newdata = array(
-					'username' => $data['authuser']['user_username'],
-					'email' => $data['authuser']['user_email'],
-					'studentnumber' => $data['authuser']['user_studentnum'],
-					'role' => $data['authuser']['user_role'],
-					'id' => $data['authuser']['user_id'],
-					'loggedin' => TRUE
-				);
-
-				$this->session->set_userdata($newdata);
-
-				$id = $this->session->userdata('id');
-				$username = $this->session->userdata('username');
-				$email = $this->session->userdata('email');
-				$studentnumber = $this->session->userdata('studentnumber');
-				$role = $this->session->userdata('role');
-
-				$data['userInfo'] = $this->UsersModel->getUserInfo($id);*/
 
 				//when login works, it goes to the myfol main home 
 				$login = $this->UserModel->authenticateUser($str);
@@ -54,18 +41,18 @@ class User extends CI_Controller {
 				echo $greeting;
 
 			}else{
-				//when login does not work
-				$loadlogin = $this->UserModel->authenticateUser($str);
-				$wronglogin= json_encode($loadlogin);
-				echo $wronglogin;
+			//when login does not work
+			$loadlogin = $this->UserModel->authenticateUser($str);
+			$wronglogin= json_encode($loadlogin);
+			echo $wronglogin;
 			}
 
-			/*}else{
-				//loading login page
-				$loadlogin = $this->UserModel->authenticateUser($str);
-				$wronglogin= json_encode($loadlogin);
-				echo $wronglogin;
-			}*/
+		}else{
+		//loading login page
+		$loadlogin = $this->UserModel->authenticateUser($str);
+		$wronglogin= json_encode($loadlogin);
+		echo $wronglogin;
+		}
 		
 	}
 	

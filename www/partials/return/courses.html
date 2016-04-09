@@ -3,10 +3,16 @@
 <div ng-include="'partials/templates/main-header.html'"></div>
 
 <!--Main Banner For Headings-->
-<div class="welcome mainHeading">
+<div class="mainHeading">
 	<h2>Courses</h2>
 </div>
 
-
+<div class="courseList">
+	<h2 class="hidden">Course Selection</h2>
+<ion-item ng-repeat="course in courses" class="item-icon-right bgColorCourse" href="#/courseshome/{{$index}}">
+<h2 class="courseName">{{course.courses_name}}</h2><i class="icon ion-chevron-right courseItem"></i>
+<h4 class="courseCode">{{course.courses_codename}}</h4>
+</ion-item>
+</div>
 
 </ion-content>

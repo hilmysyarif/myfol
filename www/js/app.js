@@ -4,7 +4,6 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 var MyFol = angular.module('MyFol', ['ionic', 'ui.router', 'ngCordova'])
- .constant('LoginUrl', '')
 
 .run(function($ionicPlatform) {
 
@@ -34,6 +33,7 @@ var MyFol = angular.module('MyFol', ['ionic', 'ui.router', 'ngCordova'])
 // State Provider
 
 MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+
   $stateProvider
     .state('login', {
       url: '/login',
@@ -66,7 +66,7 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
       controller: 'CoursesCtrl'
     })
     .state('courseshome', {
-      url: '/courseshome',
+      url: '/courseshome/:id',
       templateUrl: 'partials/courses/courseshome.html',
       controller: 'CoursesHomeCtrl'
     })
@@ -87,64 +87,3 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
     });
     $urlRouterProvider.otherwise('/login');
 }]);
-
-
-
-//Controllers
-
-MyFol.controller('LoginCtrl', ['$scope', '$http', '$state', function($scope, $http, $state){
-  
-  $scope.user = {
-    username: '',
-    password: ''
-  };
-  
-  //headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
- $scope.loginForm = function(){
-   console.log('works');
-    $http.post('http://localhost:8888/myfol/User/login', $scope.user);
-    $state.go('greeting');
-    console.log($scope.user.username);
-  };
-    //$http.post('User/login').success(function(data){
-    //$scope.login = data;
-    //console.log($scope.login);
-  //});
-}]);
-
-MyFol.controller('GreetingCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-
-MyFol.controller('NewStudentCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-
-MyFol.controller('NewTutorialsCtrl', ['$scope', '$http', function($scope, $http){
-  //tutorial will parse out json from my codeigniter folder
-}]);
-
-MyFol.controller('ReturningStudentCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-
-MyFol.controller('CoursesCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-
-MyFol.controller('CoursesHomeCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-
-MyFol.controller('ClasslistCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-
-MyFol.controller('CalendarCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-
-MyFol.controller('SettingsCtrl', ['$scope', '$http', function($scope, $http){
-  
-}]);
-

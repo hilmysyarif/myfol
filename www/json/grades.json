@@ -1,0 +1,44 @@
+[  
+   {  
+      "grades_id":"1",
+      "grades_item":"Thesis Document",
+      "grades_mark":"60",
+      "grades_weight":"6\/10",
+      "grades_desc":"Individual Feedback:\r\n\r\nDocument is quite nicely designed and has a very professional look to it. Nice to see a table of contents included.  Please make sure you use a spell checking\/grammar checking service.\r\n\r\nThe concept was not very clearly explained. The background gave me somewhat of a better idea of the purpose of the app. I feel like you still need to hammer down exactly what the purpose of this app is and what it will do. Rob had talked to about creating a \"helper\" app that could be used to aid students in navigating through FOL giving point and tips. I feel this may be a better direction for you to take.\r\n\r\nI didn't see a competitive analysis. Usually you specifically list who your competitors are and discuss ways that your app is different\/better.\r\n\r\nThe technology breakdown was thorough in the sense you listed many technologies you plan on using but I would also like to see an explanation as to what they do and why you are using them.\r\n\r\nAt the beginning of the doc and in the middle, you start to get into app specific functionality but I feel it could be broken down even more.\r\n\r\nGood effort, Brit."
+   },
+   {  
+      "grades_id":"2",
+      "grades_item":"Project 1 - Star Wars API",
+      "grades_mark":"57",
+      "grades_weight":"8.5\/15",
+      "grades_desc":"Individual Feedback:\r\n\r\nValid HTML. Valid CSS. The document outline contains some untitled elements. The design is fairly basic but looks good. It's somewhat responsive but has issues at mobile size. The first AJAX call is being made correctly and the list is populating. It looks like you were getting close to being able to make the second call. You needed to add a click event to the actor tag if that is the route you planned on taking. Hopefully in the class review helped. Good effort Brit."
+   },
+   {  
+      "grades_id":"3",
+      "grades_item":"Project 2 - Mobile App",
+      "grades_mark":"75",
+      "grades_weight":"11.25\/15",
+      "grades_desc":"\t\r\nIndividual Feedback:\r\n\r\nValid HTML. Valid CSS. Even if you're using CSS three @font-face it's always a good idea to have additional fonts in the font stack. The document outline does not contain any untitled elements. The JavaScript is fairly similar to what we covered in class although you have changed it to fit the needs of your application. Factories were not use however you have use the proper syntax for minification. I'm pleased to see that you've made some effort to customize the app rather than just depending on the default ionic styles. Your primary page is functional and displays all of the country artist. Your secondary page also displays some information but other parts of the information are not functional. Your call to retrieve images is not set up correctly you are not digging down into the artist object correctly. It would have been nice to of seen the loading module that we covered in class included in your app. Solid effort Brit!"
+   },
+   {  
+      "grades_id":"4",
+      "grades_item":"Project 3 - Package Mobile App",
+      "grades_mark":"60",
+      "grades_weight":"6\/10",
+      "grades_desc":"Individual Feedback:\r\n\r\nImage provided to show compiling. Icon not present in phone gap screen but description is. Splash screen and icon present on mobile device. App itself does not load content though."
+   },
+   {  
+      "grades_id":"5",
+      "grades_item":"Project 4 - MEAN Stack App",
+      "grades_mark":"65",
+      "grades_weight":"6.5\/10",
+      "grades_desc":"Individual Feedback:\nThe design is fairly basic but like like the typeface you selected. As a whole the design feels empty. I feel like the icons of the curling stones could look more professional. Doing a google search for \"curling stone icon\" brings up some nice examples. I think having a logo an initial generic curling photo would help to liven up the design. Also a brief write up as to what the list is for\/does. For the most party the doc outline looks good, although you could use more meaningful titles. CSS is valid. Your HTML looks good for the most part but don't forget to include alt text attributes for your images. The site scales fairly well from mobile to desktop, but the view team buttons are a bit wonky at mobile size. \n\nIn terms of implementation you followed what we did in class fairly closely but adapted it to your own needs. Your primary page shows a list of information and your secondary page shows detailed information about the selected list item. You have made use of the ui-router, but I did not see ngAnimate or a factory implemented. It does like you implemented animations via CSS3 which is a nice touch. Solid effort Brit, keep plugging away."
+   },
+   {  
+      "grades_id":"6",
+      "grades_item":"Project 5 - Thesis Site",
+      "grades_mark":"80",
+      "grades_weight":"8\/10",
+      "grades_desc":"Individual Feedback:\r\n\r\nThe site appears to scale quite nicely from mobile to desktop. I'm pleased to see you have implemented a mobile specific menu. \r\n\r\nHTML is valid, though I'd like to see you using more semantic tagging. The document outline is well structured and does not contain any untied elements. Try to use more meaningful naming where possible, rather than saying \"Desktop HD Iphone\" over and over, say something like \"settings screenshot.\" 1 CSS validator error due to misspelling if transform. \r\n\r\nYour overall design is well executed. You have made strong choices in colour, typography and imagery. Your spacing and alignment is well executed as well. I'm pleased to see you leveraging SVG's. \r\n\r\nI have to question whether Angular is overkill for this assignment. The content could have easily been hard coded into a JS file or alternatively you could have created a single page scrolling site and used for the scrolling. It's important to pick the right tool for the job.\r\n\r\nWell done Brit."
+   }
+]

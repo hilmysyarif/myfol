@@ -19,6 +19,26 @@
 	mix-blend-mode: overlay;
 }
 
+
+/*--- Main Headings For My FOL ---*/
+.mainHeading
+{
+	background: rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	height: 55px;
+	position: relative;
+	bottom: 45px;
+}
+
+.mainHeading h2
+{
+	font-family: 'robotothin';
+	font-size: 1.425em;
+	text-align: center;
+	padding-top: 14px;
+	color: #fff;
+}
+
 /*Login*/
 #loginScreen
 {
@@ -383,14 +403,6 @@
 	padding-top: 20px;
 }
 
-.mainHeading h2
-{
-	font-family: 'robotothin';
-	font-size: 1.425em;
-}
-
-
-
 #welcomeMessage
 {
 	background: rgba(255, 255, 255, 0.5);
@@ -422,6 +434,8 @@
 	top: 48px;
 }
 
+/*-- Setting --*/
+
 .settingLinks
 {
 	position: relative;
@@ -443,9 +457,94 @@
 	font-size: 1.2em;
 }
 
-.homeLinks .settingLinks .bgColorHome .bgColorSetting .homeItem .settingItem
+/*--- Color Of Arrows ---*/
+.homeLinks .bgColorHome .homeItem, .settingLinks .bgColorSetting .settingItem, .courseList .bgColorCourse .courseItem
 {
 	color: #000;
+	padding-right: 16px;
 }
 
+/*-- Courses --*/
+.courseList
+{
+	margin-top: 32px;
+}
+
+.courseList .bgColorCourse h2, #courseMenu .bgColorCourseMenu h2
+{
+	font-family: 'pt_sansregular';
+	font-size: 1.125em;
+}
+
+.courseList .bgColorCourse h4, #courseMenu .bgColorCourseMenu h4
+{
+	font-family: 'pt_sansregular';
+	font-size: 0.875em;
+}
+
+.courseList .bgColorCourse a
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.courseList .bgColorCourse
+{
+	margin-bottom: 10px;
+}
+
+/*--- Course Home ---*/
+.courseMenu
+{
+	margin-top: 30px;
+}
+
+.courseMenu .bgColorCourseHome h2
+{
+	font-family: 'pt_sansregular';
+	font-size: 1.25em;
+}
+
+.courseMenu .bgColorCourseHome a
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.courseMenu .bgColorCourseMenu a
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/*Burger Menu*/
+
+.courseMenu button
+{
+	position: relative;
+	bottom: 55px;
+	width: 100%;
+	height: 80px;
+}
+
+.courseMenu button .courseName
+{
+	font-family: 'pt_sansregular';
+	font-size: 1.35em;
+	float: left;
+	padding-top: 20px;
+	padding-left: 6px;
+}
+
+.courseMenu button .arrow
+{
+	float: right;
+	padding-right: 10px;
+}
 
