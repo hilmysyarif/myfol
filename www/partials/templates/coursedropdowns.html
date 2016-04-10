@@ -1,0 +1,44 @@
+<div class="courseMenu">
+	<h2 class="hidden">Course Menu Home Page</h2>
+		<button id="button" ng-click="ShowHide()">
+			<h2 class="courseName">My Courses</h2><h2 class="arrow"><i class="icon ion-chevron-right courseMenuItem"></i></h2>
+			<span class="hidden">Toggle</span>
+		</button>
+
+		<div id="courseDropdown" ng-show="IsVisible">
+		<ion-item ng-repeat="course in courses" class="item-icon-right bgColorCourseMenu" href="#/courseshome/{{$index}}">
+			<h2 class="courseName">{{course.courses_name}}</h2><i class="icon ion-chevron-right courseMenuItem"></i>
+			<h4 class="courseCode">{{course.courses_codename}}</h4>
+		</ion-item>
+		</div>
+</div>
+
+<div id="courseLinks">
+<h2 class="hidden">Courses Links</h2>
+	<button id="button2" ng-click="ShowHide2()">
+	<h2 class="courseName">Course Links</h2><h2 class="arrow"><i class="icon ion-chevron-right courseMenuItem"></i></h2>
+	<span class="hidden">Toggle</span>
+	</button>
+
+	<div id="linksDropdown" ng-show="LinksVisible">
+	<ion-item class="item-icon-right bgColorCourseLinks" href="#/courseshome/{{$index}}">
+		<h2 class="courseName">Home</h2><i class="icon ion-chevron-right linksMenuItem"></i>
+	</ion-item>
+
+	<ion-item class="item-icon-right bgColorCourseLinks" href="#/classlist">
+		<h2 class="courseName">Classlist</h2><i class="icon ion-chevron-right linksMenuItem"></i>
+	</ion-item>
+
+	<ion-item class="item-icon-right bgColorCourseLinks" href="#">
+		<h2 class="courseName">Content</h2><i class="icon ion-chevron-right linksMenuItem"></i>
+	</ion-item>
+
+	<ion-item class="item-icon-right bgColorCourseLinks" href="#">
+		<h2 class="courseName">Discussion</h2><i class="icon ion-chevron-right linksMenuItem"></i>
+	</ion-item>
+
+	<ion-item class="item-icon-right bgColorCourseLinks" href="#/grades">
+		<h2 class="courseName">Grades</h2><i class="icon ion-chevron-right linksMenuItem"></i>
+	</ion-item>
+	</div>
+</div>

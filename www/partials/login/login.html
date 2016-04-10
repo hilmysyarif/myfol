@@ -1,6 +1,6 @@
 <!--Login Screen ng-submit="loginForm()" -->
 
-<ion-content>
+<ion-content scroll="false">
 
 <form id="loginScreen">
 	<h2 class="hidden">Login Form</h2>
@@ -14,7 +14,7 @@
 	<span ng-show="errorPassword">{{errorPassword}}</span>
 	<a class="forgotPass">Forgot Password?</a>
 	<br>
-	<span class="underline"><input ng-click="loginForm()" type="submit" id="login" value="Login"></span>
+	<a href="#/greeting" class="underline"><input type="submit" id="login" value="Login"></a>
 </form>
 
 </ion-content>

@@ -7,23 +7,26 @@
 	<h2>Courses</h2>
 </div>
 
-<div class="courseMenu">
-	<h2 class="hidden">Course Menu Home Page</h2>
-		<button id="button" ng-click="ShowHide()">
-			<h2 class="courseName">My Courses</h2><h2 class="arrow"><i class="icon ion-chevron-right courseMenuItem"></i></h2>
-			<span class="hidden">Toggle</span>
-		</button>
+<!--Main Course Home Dropdowns Include-->
+<div class="menuCourse" ng-include="'partials/templates/coursedropdowns.html'"></div>
 
-		<div id="courseDropdown" ng-show="IsVisible">
-		<ion-item ng-repeat="course in courses" class="item-icon-right bgColorCourseMenu" href="#/courseshome/{{$index}}">
-			<h2 class="courseName">{{course.courses_name}}</h2><i class="icon ion-chevron-right courseMenuItem"></i>
-			<h4 class="courseCode">{{course.courses_codename}}</h4>
-		</ion-item>
-		</div>
+<div id="textbooklist">
+	<h2>Textbook List :</h2>
+	<p>There is no textbooks needed for this course.</p>
 </div>
 
-<div id="courseLinks">
-<h2 class="hidden">Courses Links</h2>
+<div class="courseNews">
+	<h2>Course News</h2>
 </div>
+
+<!-- <div id="welcomeBack">
+	<h3>Welcome Back!</h3>
+	<h5>Posted Jan 3, 2016 8:26 PM</h5>
+	<p>Greetings Students,
+I would like to wish you all a Happy New Year!
+Welcome back to the Interactive Media Specialist Program. I am very excited to be your Prof. I look forward to expanding your knowledge base of web based technologies.
+Marco
+</p>
+</div> -->
 
 </ion-content>

@@ -25,7 +25,7 @@ MyFol.controller('NewTutorialsCtrl', ['$scope', '$http', function($scope, $http)
 }]);
 
 MyFol.controller('ReturningStudentCtrl', ['$scope', '$http', function($scope, $http){
-  
+
 }]);
 
 //MyFol.controller('CoursesCtrl', ['$scope', 'contentData', function($scope, contentData){
@@ -55,10 +55,16 @@ MyFol.controller('CoursesHomeCtrl', ['$scope', '$http', '$stateParams', function
   //hides the course dropdown
   $scope.IsVisible = false;
 
-$scope.ShowHide = function () {
+	$scope.ShowHide = function () {
    //if visible it will hide 
- $scope.IsVisible = $scope.IsVisible ? false : true;
-}
+	$scope.IsVisible = $scope.IsVisible ? false : true;
+	}
+
+	$scope.LinksVisible = false;
+
+	$scope.ShowHide2 = function () {
+		$scope.LinksVisible = $scope.LinksVisible ? false : true;
+	}
 
   	$http.get('/json/courses.json').success(function(data){
  		$scope.courses = data;

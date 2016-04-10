@@ -19,6 +19,22 @@
 	mix-blend-mode: overlay;
 }
 
+/*-- Cordova Styles --*/
+.media>p {
+    color: #444;
+}
+.bar-nav {
+    color: #ffffff;
+}
+.title {
+    color: #ffffff;
+}
+.bar-nav .icon {
+    color: #ffffff;
+}
+.bar-header-secondary {
+    background-color: #eeeeee;
+}
 
 /*--- Main Headings For My FOL ---*/
 .mainHeading
@@ -507,9 +523,15 @@
 	font-size: 1.25em;
 }
 
+.courseMenu .bgColorCourseMenu .courseMenuItem
+{
+	color: #000;
+	padding-right: 16px;
+}
+
 .courseMenu .bgColorCourseHome a
 {
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.54);
 	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
 	padding-top: 18px;
 	padding-bottom: 18px;
@@ -517,20 +539,41 @@
 
 .courseMenu .bgColorCourseMenu a
 {
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.54);
 	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
-/*Burger Menu*/
+#courseLinks .bgColorCourseLinks a
+{
+	background: rgba(255, 255, 255, 0.54);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*-- Course Menu  & Course Links --*/
+
+#courseDropdown
+{
+	position: relative;
+	top: 5px;
+}
+
+#courseDropdown .bgColorCourseMenu
+{
+	margin-bottom: 2px;
+}
 
 .courseMenu button
 {
 	position: relative;
 	bottom: 55px;
 	width: 100%;
-	height: 80px;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.54);
+	border: none;
 }
 
 .courseMenu button .courseName
@@ -545,6 +588,59 @@
 .courseMenu button .arrow
 {
 	float: right;
-	padding-right: 10px;
+	padding-right: 28px;
+}
+
+#linksDropdown
+{
+	position: relative;
+	top: 4px;
+}
+
+#courseLinks .bgColorCourseLinks
+{
+	margin-bottom: 2px;
+}
+
+#linksDropdown .bgColorCourseLinks .courseName
+{
+	padding-top: 6px;
+}
+
+#courseLinks .bgColorCourseLinks .linksMenuItem
+{
+	color: #000;
+	padding-right: 16px;
+}
+
+#courseLinks button
+{
+	position: relative;
+	bottom: 56px;
+	width: 100%;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.54);
+	border: none;
+}
+
+#courseLinks button .courseName
+{
+	font-family: 'pt_sansregular';
+	font-size: 1.35em;
+	float: left;
+	padding-top: 20px;
+	padding-left: 6px;
+}
+
+#courseLinks button .arrow
+{
+	float: right;
+	padding-right: 28px;
+}
+
+.menuCourse
+{
+	position:relative;
+	bottom: 6px;
 }
 

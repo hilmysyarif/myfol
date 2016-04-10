@@ -23,7 +23,8 @@ var MyFol = angular.module('MyFol', ['ionic', 'ui.router', 'ngCordova'])
       cordova.plugins.Keyboard.disableScroll(true);
     }
     if(window.StatusBar) {
-      StatusBar.styleDefault();
+      //StatusBar.styleDefault();
+      StatusBar.styleLightContent();
 
     }
   });
