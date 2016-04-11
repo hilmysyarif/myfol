@@ -79,7 +79,20 @@ MyFol.controller('ClasslistCtrl', ['$scope', '$http', function($scope, $http){
 }]);
 
 MyFol.controller('CalendarCtrl', ['$scope', '$http', function($scope, $http){
-  
+    $scope.CalendarCourse = false;
+
+	$scope.ShowHide3 = function () {
+   //if visible it will hide 
+	$scope.CalendarCourse = $scope.CalendarCourse ? false : true;
+	}
+
+
+    $http.get('/json/courses.json').success(function(data){
+ 		$scope.courses = data;
+
+		console.log($scope.courses);
+
+	});
 }]);
 
 MyFol.controller('SettingsCtrl', ['$scope', '$http', function($scope, $http){

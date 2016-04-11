@@ -1,0 +1,726 @@
+// Imports Scss Files
+@import 'variables';
+
+.hidden
+{
+	display: $main-display;
+}
+
+#bgColor
+{
+	background: #C42026;
+}
+
+#curve
+{
+	position: fixed;
+	top: 90px;
+
+	-webkit-mix-blend-mode: overlay;
+	-moz-mix-blend-mode: overlay;
+	-o-mix-blend-mode: overlay;
+	mix-blend-mode: overlay;
+}
+
+/*--- Main Headings For My FOL ---*/
+.mainHeading
+{
+	background: $background-secondary;
+	box-shadow: $main-box-shadow;
+	height: 55px;
+	position: $main-position;
+	bottom: 45px;
+}
+
+.mainHeading h2
+{
+	font-family: $main-head-font;
+	font-size: 1.425em;
+	text-align: center;
+	padding-top: 14px;
+	color: $main-color;
+}
+
+/*Login*/
+#loginScreen
+{
+	margin-left: 30px;
+	margin-top: 150px;
+}
+
+.loginLabel
+{
+	font-family: $main-head-font;
+	color: $main-color;
+	font-size: 1.375em;
+}
+
+.loginInput
+{
+	font-family: $main-head-font;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	color: $main-color;
+	width:90%;
+	border-radius: $main-border-radius;
+	padding-top: 10px;
+	
+	-webkit-box-shadow: $main-box-shadow;
+	-moz-box-shadow: $main-box-shadow;
+	-o-box-shadow: $main-box-shadow;
+	box-shadow: $main-box-shadow;
+}
+
+.loginInput[type="text"], .loginInput[type="password"]
+{
+	padding-left: 15px;
+	height: 51px;
+	font-size: 1.1em;
+}
+
+.forgotPass
+{
+	font-family: $main-head-italic-font;
+	font-size: $course-code;
+	color: $main-color;
+	float: $float-right;
+	padding-right: 45px;
+	letter-spacing: 0.5px;
+}
+
+#login
+{
+	font-family: $main-head-font;
+	background: rgba(0,0,0,0.63);
+	border-radius: $main-border-radius;
+	border: $main-border;
+	color: $main-color;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 150px;
+	padding-right: 150px;
+	margin-top: 50px;
+	font-size: 1.3em;
+
+	-webkit-box-shadow: $main-box-shadow;
+	-moz-box-shadow: $main-box-shadow;
+	-o-box-shadow: $main-box-shadow;
+	box-shadow: $main-box-shadow;
+}
+
+/*Greeting*/
+
+#greeting
+{
+	margin-top: 80px;
+}
+
+#greetingBeg, #greetingEnd
+{
+	background: rgba(0,0,0,0.69);
+	box-shadow: $main-box-shadow;
+	border-radius: $main-border-radius;
+	width: 70%;
+	padding-left: $padding-content;
+	padding-right: $padding-content;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	margin-left: 60px;
+}
+
+#greetingBeg h4, #greetingEnd h4
+{
+	font-family: $main-head-font;
+	color: $main-color;
+	font-size: $main-course-menu;
+	text-align: $text-center;
+}
+
+#greetingInputs
+{
+	margin-left: 60px;
+}
+
+#newstudent, #returningstudent
+{
+	border: none;
+	background: rgba(0,0,0,0.69);
+	box-shadow: $main-box-shadow;
+	border-radius: $main-border-radius;
+	width:80%;
+	color: $main-color;
+	font-family: $main-head-font;
+	font-size: $main-course-menu;
+	text-align: $text-center;
+	padding-left: $padding-content;
+	padding-right: $padding-content;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-bottom: 34px;
+}
+
+.underline
+{
+	text-decoration: $text-decor;
+}
+
+/*New Student*/
+#saveContainer
+{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	position: $main-position;
+	left: 275px;
+}
+
+#saveBut
+{
+	border: $main-border;
+	background: rgba(0,0,0,0.5);
+	box-shadow: $main-box-shadow;
+	border-radius: $main-border-radius;
+	color: #ffffff;
+	font-family: $main-head-font;
+	font-size: 1.3em;
+	padding-left: $padding-content-two;
+	padding-right: $padding-content-two;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+#createProfile
+{
+	border-radius: $main-border-radius;
+	box-shadow: $main-box-shadow;
+	background: rgba(0,0,0,0.69);
+	width: 90%;
+	padding-left: $padding-content-two;
+	padding-right: $padding-content-two;
+	padding-top: 15px;
+	padding-bottom: 8px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#createProfile h2
+{
+	color: $main-color;
+	font-family: $main-head-font;
+	font-size: 1.5em;
+	text-align: $text-center;
+}
+
+#fillOutProfile
+{
+	margin-left: 20px;
+}
+
+.profileLabel
+{
+	font-family: $main-head-two-font;
+	color: $main-color;
+}
+
+.profileInput
+{
+	width:94%;
+	border-radius: $main-border-radius;
+	font-family: $main-head-two-font;
+	margin-top: 10px;
+
+	-webkit-box-shadow: $main-box-shadow;
+	-moz-box-shadow: $main-box-shadow;
+	-o-box-shadow: $main-box-shadow;
+	box-shadow: $main-box-shadow;
+
+}
+
+.profileInput[type="text"]
+{
+	padding-left: 15px;
+	height: 35px;
+	font-size: $paragraph-font-size;
+}
+
+.profileInputFile[type="file"]
+{
+	font-family: $main-head-two-font;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+/*Tutorials*/
+
+
+/*Returning Student*/
+
+/*Main Top Header For My FOL*/
+.mainHeader
+{
+	background: rgba(0,0,0,0.5);
+	box-shadow: $main-box-shadow;
+	margin-top: 30px;
+	height: 65px;
+}
+
+.mainHeader h2
+{
+	font-family: $main-head-font;
+	color: $main-color;
+	font-size: 1.8em;
+	width: 50%;
+	padding-left: 15px;
+	position: $main-position;
+	top: 15px;
+}
+
+.mainIcons
+{
+	position: $main-position;
+	left: 265px;
+	bottom: 27px;
+}
+
+.alert
+{
+	width: 6%;
+	margin-right: 20px;
+}
+
+.calendar
+{
+	width: 7%;
+	margin-right: $margin-right;
+}
+
+.settings
+{
+	width: 7%;
+	margin-right: $margin-right;
+}
+
+.bg1
+{
+	background: #E0242A;
+	height: 60px;
+	margin-top: 15px;
+	z-index: -2;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.50);
+	overflow: $main-overflow;
+}
+
+.item
+{
+	background: rgba(155, 155, 155, 0.29);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.50);
+	position: $main-position;
+	bottom: 60px;
+	border: $main-border;
+}
+
+#navCont
+{
+	overflow: $main-overflow;
+	height: 29px;
+}
+
+.mainNav
+{
+	z-index: 1;
+	height: 30px;
+}
+
+#mainNav .scroll-bar-h 
+{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 0;
+	display: $main-display;
+}
+
+#mainNav .scroll-bar 
+{
+    position: static;
+    z-index: 1;
+	display: $main-display;
+}
+
+.scroll-bar-indicator.scroll-bar-fade-out 
+{
+    opacity: 0;
+	display: $main-display;
+}
+
+.scroll-bar-h .scroll-bar-indicator 
+{
+    height: 0;
+	display: $main-display;
+}
+
+.scroll-bar-indicator 
+{
+    position: $main-secondary;
+    border-radius: 4px;
+    background: rgba(155, 155, 155, 0.29);
+    opacity: 1;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+	display: $main-display;
+}
+
+#mainNav a
+{
+	text-decoration: $text-decor;
+}
+
+.links
+{
+	font-family: $main-nav-font;
+	color: $main-color;
+	font-size: 1.5em;
+	position: $main-position;
+	top: 5px;
+	margin-right: 25px;
+}
+
+.welcome
+{
+	background: rgba(0,0,0,0.5);
+	box-shadow: $main-box-shadow;
+	height: 65px;
+	position: $main-position;
+	bottom: 45px;
+}
+
+.welcome h2
+{
+	font-family: $main-head-title-font;
+	color: $main-color;
+	font-size: 1.625em;
+	text-align: $text-center;
+	padding-top: 20px;
+}
+
+#welcomeMessage
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: $main-box-shadow;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: $main-position;
+	bottom: 30px;
+}
+
+#welcomeMessage h3
+{
+	font-family: $welcome-title-font;
+	font-size: $course-title;
+	padding-bottom: 12px;
+}
+
+#welcomeMessage p
+{
+	font-family: $main-head-two-font;
+	font-size: $paragraph-font-size;
+}
+
+.homeLinks
+{
+	position: $main-position;
+	top: 48px;
+}
+
+/*-- Setting --*/
+
+.settingLinks
+{
+	position: $main-position;
+	top: 30px;
+}
+
+.homeLinks .bgColorHome a, .settingLinks .bgColorSetting a
+{
+	background: $main-background;
+	box-shadow: $secondary-box-shadow;
+	font-family: $content-font;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+.homeLinks .bgColorHome h2, .settingLinks .bgColorSetting h2
+{
+	font-family: $content-font;
+	font-size: 1.2em;
+}
+
+/*--- Color Of Arrows ---*/
+.homeLinks .bgColorHome .homeItem, .settingLinks .bgColorSetting .settingItem,
+ .courseList .bgColorCourse .courseItem
+{
+	color: $main-secondary-color;
+	padding-right: 16px;
+}
+
+/*-- Courses --*/
+.courseList
+{
+	margin-top: 32px;
+}
+
+.courseList .bgColorCourse h2, #courseMenu .bgColorCourseMenu h2
+{
+	font-family: $content-font;
+	font-size: $course-title;
+}
+
+.courseList .bgColorCourse h4, #courseMenu .bgColorCourseMenu h4
+{
+	font-family: $content-font;
+	font-size: $course-code;
+}
+
+.courseList .bgColorCourse a
+{
+	background: $main-background;
+	box-shadow: $secondary-box-shadow;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.courseList .bgColorCourse
+{
+	margin-bottom: 10px;
+}
+
+/*--- Course Home ---*/
+.courseMenu
+{
+	margin-top: 30px;
+}
+
+.courseMenu .bgColorCourseHome h2
+{
+	font-family: 'pt_sansregular';
+	font-size: 1.25em;
+}
+
+.courseMenu .bgColorCourseMenu .courseMenuItem
+{
+	color: $main-secondary-color;
+	padding-right: 16px;
+}
+
+.courseMenu .bgColorCourseHome a
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: $secondary-box-shadow;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.courseMenu .bgColorCourseMenu a
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: $secondary-box-shadow;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#courseLinks .bgColorCourseLinks a
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: $secondary-box-shadow;
+	padding-top: $padding-top-content;
+	padding-bottom: $padding-top-content;
+}
+
+#calendarCourseDropdown .bgColorCalendarCourseMenu a
+{
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: $secondary-box-shadow;
+	padding-top: $padding-top-content;
+	padding-bottom: $padding-top-content;
+}
+
+/*-- Course Menu  & Course Links --*/
+
+#courseDropdown
+{
+	position: $main-position;
+	top: 5px;
+}
+
+#courseDropdown .bgColorCourseMenu
+{
+	margin-bottom: 2px;
+}
+
+.courseMenu button
+{
+	position: $main-position;
+	bottom: 55px;
+	width: 100%;
+	height: $main-height;
+	background: rgba(255, 255, 255, 0.5);
+	border: $main-border;
+}
+
+.courseMenu button .courseName
+{
+	font-family: $content-font;
+	font-size: $button-course-size;
+	float: $float-left;
+	padding-top: $padding-top-content;
+	padding-left: 6px;
+}
+
+.courseMenu button .arrow
+{
+	float: $float-right;
+	padding-right: 28px;
+}
+
+#linksDropdown
+{
+	position: $main-position;
+	top: 4px;
+}
+
+#courseLinks .bgColorCourseLinks
+{
+	margin-bottom: 2px;
+}
+
+#linksDropdown .bgColorCourseLinks .courseName
+{
+	padding-top: 6px;
+}
+
+#courseLinks .bgColorCourseLinks .linksMenuItem
+{
+	color: $main-secondary-color;
+	padding-right: 16px;
+}
+
+#courseLinks button
+{
+	position: $main-position;
+	bottom: 56px;
+	width: 100%;
+	height: 60px;
+	background: rgba(255, 255, 255, 0.5);
+	border: $main-border;
+}
+
+#courseLinks button .courseName
+{
+	font-family: $content-font;
+	font-size: $button-course-size;
+	float: $float-left;
+	padding-top: $padding-top-content;
+	padding-left: 6px;
+}
+
+#courseLinks button .arrow
+{
+	float: $float-right;
+	padding-right: 28px;
+}
+
+.menuCourse
+{
+	position: $main-position;
+	bottom: 6px;
+}
+
+/*-- Textbook List & Course New --*/
+#textbooklist
+{
+	background: rgba(255, 255, 255, 0.54);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+	position: $main-position;
+	bottom: 56px;
+}
+
+#textbooklist h2
+{
+	font-family: $content-font;
+	font-size: 1.45em;
+}
+
+#textbooklist p
+{
+	font-family: $content-font;
+	font-size: $course-code; /*14px*/
+	padding-top: 8px;
+}
+
+.courseNews
+{
+	background: rgba(0,0,0,0.5);
+	box-shadow: $secondary-box-shadow;
+	height: 55px;
+	position: $main-position;
+	bottom: 45px;
+}
+
+.courseNews h2
+{
+	font-family: $main-head-font;
+	font-size: 1.425em;
+	text-align: $text-center;
+	padding-top: 14px;
+	color: $main-color;
+}
+
+/*-- Calendar --*/
+
+#calendarCourseDropdown
+{
+	position: $main-position;
+	top: 28px;
+}
+
+#calendarCourseDropdown .bgColorCalendarCourseMenu
+{
+	margin-bottom: 2px;
+}
+
+#calendarCourseDropdown .bgColorCalendarCourseMenu .calendarCourseMenuItem
+{
+	padding-right: 16px;
+	color: $main-secondary-color;
+}
+
+.calendarCourse button
+{
+	position: $main-position;
+	bottom: 32px;
+	width: 100%;
+	height: $main-height;
+	background: rgba(255, 255, 255, 0.5);
+	border: $main-border;
+}
+
+.calendarCourse button .courseName
+{
+	font-family: $content-font;
+	font-size: $button-course-size;
+	float: $float-left;
+	padding-top: 20px;
+	padding-left: 6px;
+}
+
+.calendarCourse button .arrow
+{
+	float: $float-right;
+	padding-right: 28px;
+}

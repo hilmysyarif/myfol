@@ -1,15 +1,17 @@
 {
     "prepare_queue": {
         "installed": [],
-        "uninstalled": []
+        "uninstalled": [
+            {
+                "plugin": "cordova-plugin-statusbar",
+                "id": "cordova-plugin-statusbar",
+                "topLevel": true
+            }
+        ]
     },
     "config_munge": {
         "files": {}
     },
-    "installed_plugins": {
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.starter"
-        }
-    },
+    "installed_plugins": {},
     "dependent_plugins": {}
 }
