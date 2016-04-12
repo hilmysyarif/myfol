@@ -9,7 +9,7 @@
 
 <div class="calendarCourse">
 	<h2 class="hidden">Course Menu Home Page</h2>
-		<button id="button3" ng-click="ShowHide3()">
+		<button id="button3" ng-click="ShowHide3(); ToggleArrowCal()">
 			<h2 class="courseName">My Courses</h2><h2 class="arrow"><i class="icon ion-chevron-right calendarCourseMenuItem"></i></h2>
 			<span class="hidden">Toggle</span>
 		</button>
@@ -22,10 +22,12 @@
 		</div>
 </div>
 
-<div class="header">
-    <i class="icon ion-chevron-left" ng-click="previous()"></i>
-    <span>{{month.format("MMMM, YYYY")}}</span>
-    <i class="icon ion-chevron-right" ng-click="next()"></i>
+<calendar selected="day"></calendar>
+
+<div class="calendarHeader">
+    <i class="icon ion-chevron-left calendarLeft" ng-click="previous()"></i>
+    <span class="monthYear">{{month.format("MMMM, YYYY")}}</span>
+    <i class="icon ion-chevron-right calendarRight" ng-click="next()"></i>
 </div>
 <div class="week names">
     <span class="day">Sun</span>

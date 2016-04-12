@@ -457,6 +457,7 @@
 {
 	font-family: $content-font;
 	font-size: 1.2em;
+	padding-left: 10px;
 }
 
 /*--- Color Of Arrows ---*/
@@ -477,12 +478,14 @@
 {
 	font-family: $content-font;
 	font-size: $course-title;
+	padding-left: 10px;
 }
 
 .courseList .bgColorCourse h4, #courseMenu .bgColorCourseMenu h4
 {
 	font-family: $content-font;
 	font-size: $course-code;
+	padding-left: 10px;
 }
 
 .courseList .bgColorCourse a
@@ -577,13 +580,24 @@
 	font-size: $button-course-size;
 	float: $float-left;
 	padding-top: $padding-top-content;
-	padding-left: 6px;
+	padding-left: 10px;
 }
 
 .courseMenu button .arrow
 {
 	float: $float-right;
 	padding-right: 28px;
+
+	transition: all 400ms ease;
+}
+
+.courseMenu button .arrow:active
+{
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 #linksDropdown
@@ -624,7 +638,7 @@
 	font-size: $button-course-size;
 	float: $float-left;
 	padding-top: $padding-top-content;
-	padding-left: 6px;
+	padding-left: 10px;
 }
 
 #courseLinks button .arrow
@@ -645,7 +659,7 @@
 	background: rgba(255, 255, 255, 0.54);
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-left: 10px;
+	padding-left: 20px;
 	position: $main-position;
 	bottom: 56px;
 }
@@ -679,6 +693,41 @@
 	text-align: $text-center;
 	padding-top: 14px;
 	color: $main-color;
+}
+
+#welcomeBack
+{
+	background: rgba(255, 255, 255, 0.54);
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	position: $main-position;
+	bottom: 36px;
+}
+
+#welcomeBack h3
+{
+	font-family: $main-head-title-font;
+	padding-left: 15px;
+	font-size: 1.35em;
+}
+
+#welcomeBack h5
+{
+	font-family: $content-font;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	font-size: $course-code;
+}
+
+#welcomeBack p
+{
+	font-family: $content-font;
+	padding-left: 15px;
+	padding-right: 20px;
+	padding-top: 15px;
+	font-size: 1em;
 }
 
 /*-- Calendar --*/
@@ -716,11 +765,58 @@
 	font-size: $button-course-size;
 	float: $float-left;
 	padding-top: 20px;
-	padding-left: 6px;
+	padding-left: 10px;
 }
 
 .calendarCourse button .arrow
 {
 	float: $float-right;
 	padding-right: 28px;
+
+	transition: all 400ms ease;
 }
+
+.calendarCourse button .arrow:active{}
+
+.calendarHeader
+{
+	background: $calendar-background-color;
+	width: 90%;
+	height: $main-height;
+	color: $main-color;
+}
+
+.calendarHeader .calendarLeft
+{
+	float: $float-left;
+}
+
+.calendarHeader .calendarRight
+{
+	float: $float-right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

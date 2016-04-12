@@ -340,7 +340,8 @@
 
 .homeLinks .bgColorHome h2, .settingLinks .bgColorSetting h2 {
   font-family: "pt_sansregular";
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  padding-left: 10px; }
 
 /*--- Color Of Arrows ---*/
 .homeLinks .bgColorHome .homeItem, .settingLinks .bgColorSetting .settingItem,
@@ -354,11 +355,13 @@
 
 .courseList .bgColorCourse h2, #courseMenu .bgColorCourseMenu h2 {
   font-family: "pt_sansregular";
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  padding-left: 10px; }
 
 .courseList .bgColorCourse h4, #courseMenu .bgColorCourseMenu h4 {
   font-family: "pt_sansregular";
-  font-size: 0.875em; }
+  font-size: 0.875em;
+  padding-left: 10px; }
 
 .courseList .bgColorCourse a {
   background: rgba(255, 255, 255, 0.5);
@@ -426,11 +429,19 @@
   font-size: 1.35em;
   float: left;
   padding-top: 20px;
-  padding-left: 6px; }
+  padding-left: 10px; }
 
 .courseMenu button .arrow {
   float: right;
-  padding-right: 28px; }
+  padding-right: 28px;
+  transition: all 400ms ease; }
+
+.courseMenu button .arrow:active {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 #linksDropdown {
   position: relative;
@@ -459,7 +470,7 @@
   font-size: 1.35em;
   float: left;
   padding-top: 20px;
-  padding-left: 6px; }
+  padding-left: 10px; }
 
 #courseLinks button .arrow {
   float: right;
@@ -474,7 +485,7 @@
   background: rgba(255, 255, 255, 0.54);
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 10px;
+  padding-left: 20px;
   position: relative;
   bottom: 56px; }
 
@@ -502,6 +513,33 @@
   padding-top: 14px;
   color: #ffffff; }
 
+#welcomeBack {
+  background: rgba(255, 255, 255, 0.54);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  position: relative;
+  bottom: 36px; }
+
+#welcomeBack h3 {
+  font-family: "pt_sansbold";
+  padding-left: 15px;
+  font-size: 1.35em; }
+
+#welcomeBack h5 {
+  font-family: "pt_sansregular";
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  font-size: 0.875em; }
+
+#welcomeBack p {
+  font-family: "pt_sansregular";
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-top: 15px;
+  font-size: 1em; }
+
 /*-- Calendar --*/
 #calendarCourseDropdown {
   position: relative;
@@ -527,10 +565,23 @@
   font-size: 1.35em;
   float: left;
   padding-top: 20px;
-  padding-left: 6px; }
+  padding-left: 10px; }
 
 .calendarCourse button .arrow {
   float: right;
-  padding-right: 28px; }
+  padding-right: 28px;
+  transition: all 400ms ease; }
+
+.calendarHeader {
+  background: #4A4A4A;
+  width: 90%;
+  height: 60px;
+  color: #ffffff; }
+
+.calendarHeader .calendarLeft {
+  float: left; }
+
+.calendarHeader .calendarRight {
+  float: right; }
 
 /*# sourceMappingURL=style.css.map */

@@ -93,6 +93,9 @@ MyFol.controller('CalendarCtrl', ['$scope', '$http', function($scope, $http){
 		console.log($scope.courses);
 
 	});
+
+    //Calendar scope
+	$scope.day = moment();
 }]);
 
 MyFol.controller('SettingsCtrl', ['$scope', '$http', function($scope, $http){
