@@ -1,6 +1,8 @@
 <ion-content>
 <!--Main Header Include-->
-<div ng-include="'partials/templates/main-header.html'"></div>
+<div ng-include="'partials/templates/main-header.html'">
+	<h2 class="hidden">Main Header Template</h2>
+</div>
 
 <!--Main Banner For Headings-->
 <div class="mainHeading">
@@ -8,5 +10,28 @@
 </div>
 
 <!--Main Course Home Dropdowns Include-->
-<div class="menuCourse" ng-include="'partials/templates/coursedropdowns.html'"></div>
+<div class="menuCourse" ng-include="'partials/templates/coursedropdowns.html'">
+	<h2 class="hidden">Menu Course Dropdown Include</h2>
+</div>
+
+<!--Classlist Area-->
+<div ng-repeat="users in user | orderBy : 'user_last'" ng-click="ShowHide4()">
+	<h2 class="hidden">Classlist</h2>
+	<ion-item class="item-icon-right bgColorClasslist">
+		<h3 class="hidden">User Image & Username</h3>
+		<img class="userImage" src="img/{{users.user_image}}" alt="user image">
+		<h2 class="userName">{{users.user_last}} , {{users.user_first}}</h2>
+	</ion-item>
+
+	<div class="classlistDrop" ng-show="DropdownClaslist">
+		<h4 class="hidden">Classlist Dropdown Classlist</h4>
+		<button id="emailBut">Email</button>
+		<button id="profileBut">Profile</button>
+	</div>
+</div>
+
 </ion-content>
+
+	<!-- <div class="item item-divider" ng-if="firstLetter(users.user_last) != firstLetter(users[$index-1].user_last)">
+		{{firstLetter(users.user_last)}}
+	</div> <--></-->
