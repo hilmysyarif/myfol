@@ -813,20 +813,81 @@
 
 /*-- Classlist --*/
 
+#classlist
+{
+	position: $main-position;
+	bottom: 63px;
+}
+
 #classlist #listUser button /*Button in classlist*/
 {
 	width: $main-width;
+	border: $main-border;
+	background: rgba(255, 255, 255, 0.5);
+	margin-bottom: 1px;
+	padding-top: $padding-top-content;
+	padding-bottom: $padding-top-content;
 }
 
-#classlist #listUser button .bgColorClasslist .userImage
+#classlist #listUser button .userImage
 {
-	width: 60%;
+	width: 20%;
+	float: $float-left;
+	margin-left: 20px;
+}
+
+#classlist #listUser button .userName
+{
+	float: $float-right;
+	font-family: $main-head-title-font;
+	font-weight: 700;
+	font-size: $button-course-size;
+	padding-top: 10px;
+	margin-right: 50px;
+	text-align: left;
 }
 
 
+/* Classlist Dropdown*/
+#classlist .bgColorClasslist
+{
+	position: $main-position;
+	top: 0px;
+}
 
+#classlist .bgColorClasslist
+{
+	background: rgba(255, 255, 255, 0.5);
+	margin-bottom: 1px; 
+	padding-bottom: 40px;
+}
 
+#classlist .bgColorClasslist #emailBut
+{
+	background: rgba(0,0,0,0.80);
+	color: $main-color;
+	border-radius: $main-border-radius;
+	font-family: $main-head-two-font;
+	font-size: $course-title;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 90%;
+	margin-bottom: 12px;
+	margin-left: 30px;
+}
 
+#classlist .bgColorClasslist #profileBut
+{
+	background: rgba(0,0,0,0.80);
+	color: $main-color;
+	border-radius: $main-border-radius;
+	font-family: $main-head-two-font;
+	font-size: $course-title;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 90%;
+	margin-left: 30px;
+}
 
 
 
