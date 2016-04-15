@@ -282,7 +282,8 @@
   text-decoration: none; }
 
 .links {
-  font-family: "pt_sans_narrowregular";
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
   color: #ffffff;
   font-size: 1.5em;
   position: relative;
@@ -297,7 +298,8 @@
   bottom: 45px; }
 
 .welcome h2 {
-  font-family: "pt_sansbold";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   color: #ffffff;
   font-size: 1.625em;
   text-align: center;
@@ -334,12 +336,14 @@
 .homeLinks .bgColorHome a, .settingLinks .bgColorSetting a {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   padding-top: 22px;
   padding-bottom: 22px; }
 
 .homeLinks .bgColorHome h2, .settingLinks .bgColorSetting h2 {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.2em;
   padding-left: 10px; }
 
@@ -354,12 +358,14 @@
   margin-top: 32px; }
 
 .courseList .bgColorCourse h2, #courseMenu .bgColorCourseMenu h2 {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.125em;
   padding-left: 10px; }
 
 .courseList .bgColorCourse h4, #courseMenu .bgColorCourseMenu h4 {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 0.875em;
   padding-left: 10px; }
 
@@ -377,7 +383,8 @@
   margin-top: 30px; }
 
 .courseMenu .bgColorCourseHome h2 {
-  font-family: 'pt_sansregular';
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.25em; }
 
 .courseMenu .bgColorCourseMenu .courseMenuItem {
@@ -425,7 +432,8 @@
   border: none; }
 
 .courseMenu button .courseName {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.35em;
   float: left;
   padding-top: 20px;
@@ -466,7 +474,8 @@
   border: none; }
 
 #courseLinks button .courseName {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.35em;
   float: left;
   padding-top: 20px;
@@ -490,11 +499,13 @@
   bottom: 56px; }
 
 #textbooklist h2 {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.45em; }
 
 #textbooklist p {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 0.875em;
   /*14px*/
   padding-top: 8px; }
@@ -522,19 +533,22 @@
   bottom: 36px; }
 
 #welcomeBack h3 {
-  font-family: "pt_sansbold";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   padding-left: 15px;
   font-size: 1.35em; }
 
 #welcomeBack h5 {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   font-size: 0.875em; }
 
 #welcomeBack p {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   padding-left: 15px;
   padding-right: 20px;
   padding-top: 15px;
@@ -561,7 +575,8 @@
   border: none; }
 
 .calendarCourse button .courseName {
-  font-family: "pt_sansregular";
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 1.35em;
   float: left;
   padding-top: 20px;
@@ -585,5 +600,10 @@
   float: right; }
 
 /*-- Classlist --*/
+#classlist #listUser button {
+  width: 100%; }
+
+#classlist #listUser button .bgColorClasslist .userImage {
+  width: 60%; }
 
 /*# sourceMappingURL=style.css.map */

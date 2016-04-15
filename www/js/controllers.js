@@ -76,6 +76,18 @@ MyFol.controller('ClasslistCtrl', ['$scope', '$http', function($scope, $http){
 
 	});
 
+  	$scope.hiddenDiv = false;
+
+  	$scope.showDiv = function () {
+  		$scope.hiddenDiv = !$scope.hiddenDiv;
+  	};
+
+	//$scope.ClaslistVisible = false;
+
+	//$scope.ShowHide4 = function () {
+		//$scope.ClaslistVisible = $scope.ClaslistVisible ? false : true;
+	//}
+
   	//suppose to scope out the alphabet for sorting everyone in the classlist
   	
 	$scope.firstLetter = function(user_last) {

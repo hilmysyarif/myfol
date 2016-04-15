@@ -15,19 +15,23 @@
 </div>
 
 <!--Classlist Area-->
-<div ng-repeat="users in user | orderBy : 'user_last'" ng-click="ShowHide4()">
+<div id="classlist">
+<div id="listUser" ng-repeat="users in user | orderBy : 'user_last'">
 	<h2 class="hidden">Classlist</h2>
-	<ion-item class="item-icon-right bgColorClasslist">
+	<button id="userBox" ng-click="hiddenDiv = !hiddenDiv">
 		<h3 class="hidden">User Image & Username</h3>
-		<img class="userImage" src="img/{{users.user_image}}" alt="user image">
+		<!--img class="userImage" src="img/{{users.user_image}}" alt="user image"-->
 		<h2 class="userName">{{users.user_last}} , {{users.user_first}}</h2>
-	</ion-item>
-
-	<div class="classlistDrop" ng-show="DropdownClaslist">
+	</button>
+		<div class="classlistDrop" ng-show="hiddenDiv">
 		<h4 class="hidden">Classlist Dropdown Classlist</h4>
+		<ion-item class="item-icon-right bgColorClasslist">
 		<button id="emailBut">Email</button>
+		<br>
 		<button id="profileBut">Profile</button>
-	</div>
+		</ion-item>
+	</div> 
+</div>
 </div>
 
 </ion-content>

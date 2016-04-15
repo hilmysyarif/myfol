@@ -1,0 +1,89 @@
+SQL Queries For Thesis
+
+User :
+
+
+Get All Users : 
+
+SELECT * FROM tbl_user
+
+Get One User : 
+
+SELECT * FROM tbl_user WHERE user_id
+
+SELECT * FROM tbl_user WHERE user_id = '{$id}'
+
+Login Authenticate :
+
+SELECT * FROM tbl_user WHERE user_username = '{$username}' AND user_password = '{$password}'
+
+
+Program Course Link :
+
+
+Get All Course Links
+
+SELECT * FROM tbl_programcourselink
+
+
+Get One Course Link :
+
+SELECT * FROM tbl_programcourselink WHERE programcourselink_id
+
+SELECT * FROM tbl_programcourselink WHERE programcourselink_id = '{$id}'
+
+
+Courses :
+
+Getting the Course Name & Course Code :
+
+SELECT * FROM tbl_courses
+
+
+Profile Information :
+
+Inserting Profile Info :
+
+INSERT INTO tbl_profile VALUES(NULL, profile_image, profile_hometown, profile_facebook, profile_twitter, profile_linkedin, profile_email, profile_hobbies, profile_books, profile_website, profile_learnexper, profile_address, profile_city, profile_province, profile_country, profile_highschool, profile_employers, profile_position, profile_university, profile_tagline, profile_music, profile_tvshows, profile_movies, profile_quotes, profile_goals)
+
+Editing Profile Info : (need to set a value)
+
+UPDATE tbl_profile SET profile_image, profile_hometown, profile_facebook, profile_twitter, profile_linkedin, profile_email, profile_hobbies, profile_books, profile_website, profile_learnexper, profile_address, profile_city, profile_province, profile_country, profile_highschool, profile_employers, profile_position, profile_university, profile_tagline, profile_music, profile_tvshows, profile_movies, profile_quotes, profile_goals WHERE user_id = '{$id}'
+
+
+Calendar :
+
+Inserting Data Calendar
+
+INSERT INTO tbl_calendar VALUES(NULL, calendar_date, calendar_desc)
+
+
+Tutorials :
+
+Selecting all of the tutorials
+
+SELECT * FROM tbl_tutorials
+
+
+Grades :
+
+Selecting all grades from the table
+
+SELECT * FROM tbl_grades
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

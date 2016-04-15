@@ -181,7 +181,7 @@
 	background: rgba(0,0,0,0.5);
 	box-shadow: $main-box-shadow;
 	border-radius: $main-border-radius;
-	color: #ffffff;
+	color: $main-color;
 	font-family: $main-head-font;
 	font-size: 1.3em;
 	padding-left: $padding-content-two;
@@ -380,6 +380,7 @@
 .links
 {
 	font-family: $main-nav-font;
+	font-weight: 400;
 	color: $main-color;
 	font-size: 1.5em;
 	position: $main-position;
@@ -399,6 +400,7 @@
 .welcome h2
 {
 	font-family: $main-head-title-font;
+	font-weight: 700;
 	color: $main-color;
 	font-size: 1.625em;
 	text-align: $text-center;
@@ -448,14 +450,16 @@
 {
 	background: $main-background;
 	box-shadow: $secondary-box-shadow;
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	padding-top: 22px;
 	padding-bottom: 22px;
 }
 
 .homeLinks .bgColorHome h2, .settingLinks .bgColorSetting h2
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: 1.2em;
 	padding-left: 10px;
 }
@@ -476,14 +480,16 @@
 
 .courseList .bgColorCourse h2, #courseMenu .bgColorCourseMenu h2
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: $course-title;
 	padding-left: 10px;
 }
 
 .courseList .bgColorCourse h4, #courseMenu .bgColorCourseMenu h4
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: $course-code;
 	padding-left: 10px;
 }
@@ -509,8 +515,9 @@
 
 .courseMenu .bgColorCourseHome h2
 {
-	font-family: 'pt_sansregular';
-	font-size: 1.25em;
+	font-family: $main-head-title-font;
+	font-weight: 400;
+	font-size: $main-course-menu;
 }
 
 .courseMenu .bgColorCourseMenu .courseMenuItem
@@ -568,7 +575,7 @@
 {
 	position: $main-position;
 	bottom: 55px;
-	width: 100%;
+	width: $main-width;
 	height: $main-height;
 	background: rgba(255, 255, 255, 0.5);
 	border: $main-border;
@@ -576,7 +583,8 @@
 
 .courseMenu button .courseName
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: $button-course-size;
 	float: $float-left;
 	padding-top: $padding-top-content;
@@ -626,7 +634,7 @@
 {
 	position: $main-position;
 	bottom: 56px;
-	width: 100%;
+	width: $main-width;
 	height: 60px;
 	background: rgba(255, 255, 255, 0.5);
 	border: $main-border;
@@ -634,7 +642,8 @@
 
 #courseLinks button .courseName
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: $button-course-size;
 	float: $float-left;
 	padding-top: $padding-top-content;
@@ -666,13 +675,15 @@
 
 #textbooklist h2
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: 1.45em;
 }
 
 #textbooklist p
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: $course-code; /*14px*/
 	padding-top: 8px;
 }
@@ -708,13 +719,15 @@
 #welcomeBack h3
 {
 	font-family: $main-head-title-font;
+	font-weight: 700;
 	padding-left: 15px;
 	font-size: 1.35em;
 }
 
 #welcomeBack h5
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 10px;
@@ -723,7 +736,8 @@
 
 #welcomeBack p
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	padding-left: 15px;
 	padding-right: 20px;
 	padding-top: 15px;
@@ -753,7 +767,7 @@
 {
 	position: $main-position;
 	bottom: 32px;
-	width: 100%;
+	width: $main-width;
 	height: $main-height;
 	background: rgba(255, 255, 255, 0.5);
 	border: $main-border;
@@ -761,7 +775,8 @@
 
 .calendarCourse button .courseName
 {
-	font-family: $content-font;
+	font-family: $main-head-title-font;
+	font-weight: 400;
 	font-size: $button-course-size;
 	float: $float-left;
 	padding-top: 20px;
@@ -798,8 +813,15 @@
 
 /*-- Classlist --*/
 
+#classlist #listUser button /*Button in classlist*/
+{
+	width: $main-width;
+}
 
-
+#classlist #listUser button .bgColorClasslist .userImage
+{
+	width: 60%;
+}
 
 
 

@@ -1,0 +1,211 @@
+Queries In Codeigniter
+
+Get All Users : 
+
+
+public function getAllUsers(){
+
+$query = $this->db->get(’tbl_user’);
+return $query->result_array();
+
+}/Users/britneycore/Desktop/Queries-In-Codeigniter.txt
+
+
+Get One User : 
+
+
+public function getOneUser($id){
+		
+$this->db->select('*');
+$this->db->from('tbl_users');
+
+$query = $this->db->get_where('tbl_users', array('users_id'=>$id));
+return $query->row_array();
+
+}
+
+
+Login Authenticate :
+
+
+public function authenticateUser(){
+		
+$username = $this->input->post('username');
+$password = $this->input->post('password');
+
+$query = $this->db->get_where('tbl_user', array('user_username' => $username, 'user_password' => $password));
+
+if($query->num_rows() > 0) {
+	return $query->row_array();
+}else{
+	return false;
+}
+
+}
+
+
+Program Course Link :
+
+
+public function getAllProgramCourses(){
+
+$query = $this->db->get(’tbl_programcourselink’);
+return $query->result_array();
+
+}
+
+
+public function getOneProgramCourses($id){
+
+$this->db->select('*');
+$this->db->from('tbl_programcourselink');
+
+$query = $this->db->get_where('tbl_programcourselink', array(‘programcourselink_id'=>$id));
+return $query->row_array();
+
+}
+
+
+public function getAllCourses(){
+
+$query = $this->db->get(’tbl_course’);
+return $query->result_array();
+
+}
+
+
+Profile Information :
+
+
+public function addProfilePhoto(){
+
+}
+
+
+public function insertProfileInfo(){
+
+$data = {
+‘profile_id' => NULL,
+‘profile_image’ => $this->input->post(‘image’),
+‘profile_hometown’ => $this->input->post(‘hometown’),
+‘profile_facebook’ => $this->input->post(‘facebook’),
+‘profile_twitter’ => $this->input->post(‘twitter’),
+‘profile_linkedin’ => $this->input->post(‘linkedin’),
+‘profile_email’ => $this->input->post(‘email’),
+‘profile_hobbies’ => $this->input->post(‘hobbies’),
+‘profile_books’ => $this->input->post(‘books’),
+‘profile_website’ => $this->input->post(‘website’),
+‘profile_learnexper’ => $this->input->post(‘learnexper’),
+‘profile_address’ => $this->input->post(‘address’),
+‘profile_city’ => $this->input->post(‘city’),
+‘profile_province’ => $this->input->post(‘province’),
+‘profile_country’ => $this->input->post(‘country’),
+‘profile_highschool’ => $this->input->post(‘highschool’),
+‘profile_employers’ => $this->input->post(‘employers’),
+‘profile_position’ => $this->input->post(‘position’),
+‘profile_university’ => $this->input->post(‘university’),
+‘profile_tagline’ => $this->input->post(‘tagline’),
+‘profile_music’ => $this->input->post(‘music’),
+‘profile_tvshows’ => $this->input->post(‘tvshows’),
+‘profile_movies’ => $this->input->post(‘movies’),
+‘profile_quotes’ => $this->input->post(‘quotes’),
+‘profile_goals’ => $this->input->post(‘goals’)
+}
+
+return $this->db->insert('tbl_profile’, $data);
+
+}
+
+public function updateProfileInfo(){
+
+//Going to have to join tbl_profile and tbl_user
+
+
+
+//update into the profile table and set the information
+
+$edit = {
+‘profile_id' => NULL,
+‘profile_image’ => $this->input->post(‘image’),
+‘profile_hometown’ => $this->input->post(‘hometown’),
+‘profile_facebook’ => $this->input->post(‘facebook’),
+‘profile_twitter’ => $this->input->post(‘twitter’),
+‘profile_linkedin’ => $this->input->post(‘linkedin’),
+‘profile_email’ => $this->input->post(‘email’),
+‘profile_hobbies’ => $this->input->post(‘hobbies’),
+‘profile_books’ => $this->input->post(‘books’),
+‘profile_website’ => $this->input->post(‘website’),
+‘profile_learnexper’ => $this->input->post(‘learnexper’),
+‘profile_address’ => $this->input->post(‘address’),
+‘profile_city’ => $this->input->post(‘city’),
+‘profile_province’ => $this->input->post(‘province’),
+‘profile_country’ => $this->input->post(‘country’),
+‘profile_highschool’ => $this->input->post(‘highschool’),
+‘profile_employers’ => $this->input->post(‘employers’),
+‘profile_position’ => $this->input->post(‘position’),
+‘profile_university’ => $this->input->post(‘university’),
+‘profile_tagline’ => $this->input->post(‘tagline’),
+‘profile_music’ => $this->input->post(‘music’),
+‘profile_tvshows’ => $this->input->post(‘tvshows’),
+‘profile_movies’ => $this->input->post(‘movies’),
+‘profile_quotes’ => $this->input->post(‘quotes’),
+‘profile_goals’ => $this->input->post(‘goals’)
+}
+
+$this->db->where('user_id', $this->session->userdata('id'));
+return $this->db->update->set(‘tbl_user', $data);
+
+}
+
+
+Grades :
+
+public function grades(){
+
+$query = $this->db->get(’tbl_grades’);
+return $query->result_array();
+
+}
+
+
+Tutorials :
+
+
+public function tutorials(){
+
+$query = $this->db->get(’tbl_tutorials’);
+return $query->result_array();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

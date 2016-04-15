@@ -5,9 +5,14 @@ $main-head-font: 'robotothin';
 $main-head-italic-font: 'robotoitalic';
 $main-head-two-font: 'robotolight';
 $welcome-title-font: 'robotomedium';
-$main-nav-font: 'pt_sans_narrowregular';
-$main-head-title-font: 'pt_sansbold';
-$content-font: 'pt_sansregular';
+
+
+
+//narrow regular
+$main-nav-font: 'PT Sans Narrow', sans-serif;
+//pt sans bold
+$main-head-title-font: 'PT Sans', sans-serif;
+//$content-font: 'pt_sansregular';
 
 // Font Sizes
 $button-course-size: 1.35em;
