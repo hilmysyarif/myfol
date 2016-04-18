@@ -44,6 +44,14 @@ MyFol.controller('NewsCtrl', ['$scope', '$http', function($scope, $http){
 
 }]);
 
+MyFol.controller('EmailCtrl', ['$scope', '$http', function($scope, $http){
+  //console.log("Email Controller called");
+}]);
+
+MyFol.controller('TestBookingsCtrl', ['$scope', '$http', function($scope, $http){
+  //console.log("Test Bookings Controller called");
+}]);
+
 MyFol.controller('CoursesHomeCtrl', ['$scope', '$http', '$stateParams', function($scope, $http, $stateParams){
   //hides the course dropdown
   $scope.IsVisible = false;

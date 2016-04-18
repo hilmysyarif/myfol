@@ -597,6 +597,24 @@ a.md-default-theme:not(.md-button), a:not(.md-button)
 	color: #007795;
 }
 
+/*--- Email ---*/
+.emailImage
+{
+	width: 100%;
+	position: $main-position;
+	bottom: 28px;
+}
+
+/*--- Tutorials ---*/
+
+/*--- Test Bookings ---*/
+.testBookImage
+{
+	width: 100%;
+	position: $main-position;
+	bottom: 28px;
+}
+
 /*--- Course Home ---*/
 .courseMenu
 {

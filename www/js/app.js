@@ -71,6 +71,16 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
       templateUrl: 'partials/return/news.html',
       controller: 'NewsCtrl'
     })
+    .state('email', {
+      url: '/email',
+      templateUrl: 'partials/return/email.html',
+      controller: 'EmailCtrl'
+    })
+    .state('testbookings', {
+      url: '/testbookings',
+      templateUrl: 'partials/return/testbookings.html',
+      controller: 'TestBookingsCtrl'
+    })
     .state('courseshome', {
       url: '/courseshome/:id',
       templateUrl: 'partials/courses/courseshome.html',

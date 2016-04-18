@@ -447,6 +447,19 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
   font-weight: 400;
   color: #007795; }
 
+/*--- Email ---*/
+.emailImage {
+  width: 100%;
+  position: relative;
+  bottom: 28px; }
+
+/*--- Tutorials ---*/
+/*--- Test Bookings ---*/
+.testBookImage {
+  width: 100%;
+  position: relative;
+  bottom: 28px; }
+
 /*--- Course Home ---*/
 .courseMenu {
   margin-top: 30px; }
