@@ -88,6 +88,12 @@
 	letter-spacing: 0.5px;
 }
 
+/*Fixing the Issue of color being pink*/
+a.md-default-theme:not(.md-button), a:not(.md-button)
+{
+	color: $main-color;
+}
+
 #login
 {
 	font-family: $main-head-font;
@@ -220,6 +226,19 @@
 	text-align: $text-center;
 }
 
+.profileSubHeadings
+{
+	border-radius: $main-border-radius;
+	box-shadow: $main-box-shadow;
+	background: rgba(0,0,0,0.69);
+	width: 90%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-family: $main-head-italic-font;
+	color: $main-color;
+}
+
 #fillOutProfile
 {
 	margin-left: 20px;
@@ -257,6 +276,23 @@
 	font-family: $main-head-two-font;
 	padding-top: 8px;
 	padding-bottom: 8px;
+}
+
+.profileText
+{
+	width:94%;
+	border-radius: $main-border-radius;
+	font-family: $main-head-two-font;
+	font-size: $paragraph-font-size;
+	margin-top: 10px;
+	padding-left: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+	-webkit-box-shadow: $main-box-shadow;
+	-moz-box-shadow: $main-box-shadow;
+	-o-box-shadow: $main-box-shadow;
+	box-shadow: $main-box-shadow;
 }
 
 /*Tutorials*/
