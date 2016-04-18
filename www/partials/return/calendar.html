@@ -22,24 +22,25 @@
 		</div>
 </div>
 
-<calendar selected="day"></calendar>
-
 <div class="calendarHeader">
-    <i class="icon ion-chevron-left calendarLeft" ng-click="previous()"></i>
-    <span class="monthYear">{{month.format("MMMM, YYYY")}}</span>
-    <i class="icon ion-chevron-right calendarRight" ng-click="next()"></i>
-</div>
-<div class="week names">
-    <span class="day">Sun</span>
-    <span class="day">Mon</span>
-    <span class="day">Tue</span>
-    <span class="day">Wed</span>
-    <span class="day">Thu</span>
-    <span class="day">Fri</span>
-    <span class="day">Sat</span>
-</div>
-<div class="week" ng-repeat="week in weeks">
-    <span class="day" ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }" ng-click="select(day)" ng-repeat="day in week.days">{{day.number}}</span>
+<calendar-md flex layout layout-fill
+  calendar-direction="direction"
+  on-prev-month="prevMonth"
+  on-next-month="nextMonth"
+  on-day-click="dayClick"
+  title-format="'MMMM y'"
+  ng-model='selectedDate'
+  week-starts-on="firstDayOfWeek"
+  data-start-month="3"
+  data-start-year="2016"
+  tooltips="tooltips"
+  day-format="dayFormat"
+  day-label-format="'EEE'"
+  day-label-tooltip-format="'EEEE'"
+  day-tooltip-format="'fullDate'"
+  day-content="setDayContent"
+  disable-future-selection="false">
+</calendar-md>
 </div>
 
 </ion-content>

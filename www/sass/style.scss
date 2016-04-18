@@ -795,20 +795,19 @@
 
 .calendarHeader
 {
-	background: $calendar-background-color;
-	width: 90%;
-	height: $main-height;
+	width: 95%;
+	position: $main-position;
+	left: 10px;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar)
+{
+	background-color: #4A4A4A;
+}
+
+calendar-md .md-toolbar-tools h2 
+{
 	color: $main-color;
-}
-
-.calendarHeader .calendarLeft
-{
-	float: $float-left;
-}
-
-.calendarHeader .calendarRight
-{
-	float: $float-right;
 }
 
 /*-- Classlist --*/
