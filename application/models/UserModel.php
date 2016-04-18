@@ -49,6 +49,17 @@ class UserModel extends CI_Model {
 		}
 	}
 
+	public function getAllCalendar($str, $id = FALSE){
+
+		if ($id === FALSE){
+			$query = $this->db->get('tbl_calendar');
+			return $query->result_array();
+		}else{
+			$query = $this->db->get_where('tbl_calendar', array('calendar_id' => $id));
+			return $query->row_array();	
+		}
+	}
+
 	//Login Authenticate
 
 	public function authenticateUser($str, $id = FALSE){

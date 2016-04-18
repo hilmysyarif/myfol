@@ -148,6 +148,18 @@ class User extends CI_Controller {
 		echo $gradenames;
 	}
 
+	public function allCalendar($str=NULL){
+		$calendarlist = $this->UserModel->getAllCalendar($str);
+		$calendarnames= json_encode($calendarlist);
+		echo $calendarnames;
+	}
+
+	public function oneCalendar($str=NULL, $id){
+		$calendarlist = $this->UserModel->getAllCalendar($str, $id);
+		$calendarnames= json_encode($calendarlist);
+		echo $calendarnames;
+	}
+
 	public function users($str=NULL){
 		$userlist = $this->UserModel->getAllUsers($str);
 		$flnames= json_encode($userlist);
