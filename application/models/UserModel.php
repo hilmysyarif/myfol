@@ -60,6 +60,17 @@ class UserModel extends CI_Model {
 		}
 	}
 
+	public function getAllNews($str, $id = FALSE){
+
+		if ($id === FALSE){
+			$query = $this->db->get('tbl_news');
+			return $query->result_array();
+		}else{
+			$query = $this->db->get_where('tbl_news', array('news_id' => $id));
+			return $query->row_array();	
+		}
+	}
+
 	//Login Authenticate
 
 	public function authenticateUser($str, $id = FALSE){
@@ -71,7 +82,6 @@ class UserModel extends CI_Model {
 		}else{
 			return false;
 		}
-
 	}
 
 	public function getAllTutorials($str, $id = FALSE){
