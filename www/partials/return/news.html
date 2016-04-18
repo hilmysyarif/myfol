@@ -1,0 +1,22 @@
+<ion-content>
+
+<!--Main Header Include-->
+<div ng-include="'partials/templates/main-header.html'"></div>
+
+<!--Main Banner For Headings-->
+<div class="mainHeading">
+	<h2>News</h2>
+</div>
+
+<div id="newsList"  ng-repeat="new in news">
+	<h2 class="hidden">News List</h2>
+		<h2>{{new.news_heading}}</h2>
+		<h5>Posted {{new.news_date}}</h5>
+		<p class="newsBody">{{new.news_body}}</p>
+		<p class="newsBody2">{{new.news_bodyTwo}}</p>
+		<p class="newsBody3">{{new.news_bodyThree}}</p>
+		<p class="newsBody4">{{new.news_bodyFour}}</p>
+		<span>{{new.news_links}}</span>
+</div>
+
+</ion-content>

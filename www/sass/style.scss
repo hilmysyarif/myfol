@@ -175,7 +175,14 @@
 	left: 275px;
 }
 
-#saveBut
+#cancelContainer
+{
+	position: $main-position;
+	bottom: 73px;
+	left: 15px;
+}
+
+#saveBut, #cancelBut
 {
 	border: $main-border;
 	background: rgba(0,0,0,0.5);
@@ -507,6 +514,53 @@
 	margin-bottom: 10px;
 }
 
+/*--- News ---*/
+#newsList
+{
+	background: rgba(255, 255, 255, 0.5);
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: $main-position;
+	bottom: 28px;
+	margin-bottom: 20px;
+}
+
+#newsList h2
+{
+	font-family: $main-head-title-font;
+	font-weight: 700;
+	font-size: 1.4em;
+	padding-bottom: 8px;
+}
+
+#newsList h5
+{
+	font-family: $main-head-title-font;
+	font-weight: 400;
+	font-size: $course-code;
+	padding-bottom: 8px;
+}
+
+#newsList .newsBody, #newsList .newsBody2, #newsList .newsBody3, #newsList .newsBody4
+{
+	font-family: $main-head-title-font;
+	font-weight: 400;
+}
+
+#newsList .newsBody
+{
+	padding-bottom: 8px;
+}
+
+#newsList span /*Website links*/
+{
+	font-family: $main-head-title-font;
+	font-weight: 400;
+	color: #007795;
+}
+
 /*--- Course Home ---*/
 .courseMenu
 {
@@ -798,6 +852,7 @@
 	width: 95%;
 	position: $main-position;
 	left: 10px;
+	bottom: 10px;
 }
 
 md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar)

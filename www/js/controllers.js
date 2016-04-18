@@ -1,7 +1,11 @@
 //Controllers
 
 MyFol.controller('LoginCtrl', ['$scope', '$http', function($scope, $http){
-
+  $scope.users = [];
+  $http.post('../index.php/user/login').success(function(data){
+    $scope.login = data;
+    console.log($scope.login);
+  });
 }]);
 
 MyFol.controller('GreetingCtrl', ['$scope', '$http', function($scope, $http){
@@ -17,8 +21,7 @@ MyFol.controller('NewTutorialsCtrl', ['$scope', '$http', function($scope, $http)
 }]);
 
 MyFol.controller('ReturningStudentCtrl', ['$scope', '$http', function($scope, $http){
-	console.log("controller called");
-
+	//console.log("controller called");
 }]);
 
 MyFol.controller('CoursesCtrl', ['$scope', '$http', function($scope, $http){
@@ -28,6 +31,16 @@ MyFol.controller('CoursesCtrl', ['$scope', '$http', function($scope, $http){
 
 		console.log($scope.courses);
 	});	
+
+}]);
+
+MyFol.controller('NewsCtrl', ['$scope', '$http', function($scope, $http){
+  console.log("News Controller called");
+
+  $http.get('../index.php/user/allNews').success(function(data){
+    $scope.news = data;
+    console.log($scope.news);
+  });
 
 }]);
 
@@ -88,7 +101,7 @@ MyFol.controller('ClasslistCtrl', ['$scope', '$http', function($scope, $http){
 		//$scope.ClaslistVisible = $scope.ClaslistVisible ? false : true;
 	//}
 
-  	//suppose to scope out the alphabet for sorting everyone in the classlist
+  //suppose to scope out the alphabet for sorting everyone in the classlist
   	
 	$scope.firstLetter = function(user_last) {
       return user_last && user_last.charAt(0);
@@ -152,18 +165,11 @@ MyFol.controller('CalendarCtrl', ['$scope', '$filter', '$http', '$q', function($
 
   // You would inject any HTML you wanted for
   // that particular date here.
-        return "<p>jkjhgty</p>";
+        return "<p>Hello</p>";
 
         // You could also use an $http function directly.
        // return $http.get("/some/external/api");
       // return $http.get('../index.php/user/allCalendar');
-
-        // You could also use a promise.
-       // var deferred = $q.defer();
-        //$timeout(function() {
-          //  deferred.resolve("<p>jhg</p>");
-        //}, 1000);
-        // return deferred.promise;
 
     };
 	
