@@ -295,9 +295,6 @@ a.md-default-theme:not(.md-button), a:not(.md-button)
 	box-shadow: $main-box-shadow;
 }
 
-/*Tutorials*/
-
-
 /*Returning Student*/
 
 /*Main Top Header For My FOL*/
@@ -606,6 +603,12 @@ a.md-default-theme:not(.md-button), a:not(.md-button)
 }
 
 /*--- Tutorials ---*/
+.tutorialImage
+{
+	width: 100%;
+	position: $main-position;
+	bottom: 28px;
+}
 
 /*--- Test Bookings ---*/
 .testBookImage
@@ -850,6 +853,36 @@ a.md-default-theme:not(.md-button), a:not(.md-button)
 	padding-right: 20px;
 	padding-top: 15px;
 	font-size: 1em;
+}
+
+/*--- Content ---*/
+.contentImage
+{
+	width: 100%;
+	position: $main-position;
+	bottom: 63px;
+}
+/*--- Grades ---*/
+.gradesImage
+{
+	width: 100%;
+	position: $main-position;
+	bottom: 63px;
+}
+/*--- Discussion ---*/
+.discussionImage
+{
+	width: 100%;
+	position: $main-position;
+	bottom: 63px;
+}
+
+/*-- Alert --*/
+.alertImage
+{
+	width: 100%;
+	position: $main-position;
+	bottom: 30px;
 }
 
 /*-- Calendar --*/

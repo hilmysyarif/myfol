@@ -225,7 +225,6 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
   -o-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5); }
 
-/*Tutorials*/
 /*Returning Student*/
 /*Main Top Header For My FOL*/
 .mainHeader {
@@ -454,6 +453,11 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
   bottom: 28px; }
 
 /*--- Tutorials ---*/
+.tutorialImage {
+  width: 100%;
+  position: relative;
+  bottom: 28px; }
+
 /*--- Test Bookings ---*/
 .testBookImage {
   width: 100%;
@@ -635,6 +639,30 @@ a.md-default-theme:not(.md-button), a:not(.md-button) {
   padding-right: 20px;
   padding-top: 15px;
   font-size: 1em; }
+
+/*--- Content ---*/
+.contentImage {
+  width: 100%;
+  position: relative;
+  bottom: 63px; }
+
+/*--- Grades ---*/
+.gradesImage {
+  width: 100%;
+  position: relative;
+  bottom: 63px; }
+
+/*--- Discussion ---*/
+.discussionImage {
+  width: 100%;
+  position: relative;
+  bottom: 63px; }
+
+/*-- Alert --*/
+.alertImage {
+  width: 100%;
+  position: relative;
+  bottom: 30px; }
 
 /*-- Calendar --*/
 #calendarCourseDropdown {

@@ -51,11 +51,6 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
       templateUrl: 'partials/new/newstudent.html',
       controller: 'NewStudentCtrl'
     })
-    .state('tutorials', {
-      url: '/tutorials',
-      templateUrl: 'partials/return/tutorials.html',
-      controller: 'NewTutorialCtrl'
-    })
     .state('returningstudent', {
       url: '/returningstudent',
       templateUrl: 'partials/return/returningstudent.html',
@@ -76,6 +71,11 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
       templateUrl: 'partials/return/email.html',
       controller: 'EmailCtrl'
     })
+    .state('tutorials', {
+      url: '/tutorials',
+      templateUrl: 'partials/return/tutorials.html',
+      controller: 'TutorialsCtrl'
+    })
     .state('testbookings', {
       url: '/testbookings',
       templateUrl: 'partials/return/testbookings.html',
@@ -90,6 +90,26 @@ MyFol.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
       url: '/classlist',
       templateUrl: 'partials/courses/classlist.html',
       controller: 'ClasslistCtrl'
+    })
+    .state('content', {
+      url: '/content',
+      templateUrl: 'partials/courses/content.html',
+      controller: 'ContentCtrl'
+    })
+    .state('discussion', {
+      url: '/discussion',
+      templateUrl: 'partials/courses/discussion.html',
+      controller: 'DiscussionCtrl'
+    })
+    .state('grades', {
+      url: '/grades',
+      templateUrl: 'partials/courses/grades.html',
+      controller: 'GradesCtrl'
+    })
+    .state('alert', {
+      url: '/alert',
+      templateUrl: 'partials/return/alert.html',
+      controller: 'AlertCtrl'
     })
     .state('calendar', {
       url: '/calendar',

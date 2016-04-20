@@ -16,10 +16,6 @@ MyFol.controller('NewStudentCtrl', ['$scope', '$http', function($scope, $http){
   
 }]);
 
-MyFol.controller('NewTutorialsCtrl', ['$scope', '$http', function($scope, $http){
-  //tutorial will parse out json from my codeigniter folder
-}]);
-
 MyFol.controller('ReturningStudentCtrl', ['$scope', '$http', function($scope, $http){
 	//console.log("controller called");
 }]);
@@ -46,6 +42,10 @@ MyFol.controller('NewsCtrl', ['$scope', '$http', function($scope, $http){
 
 MyFol.controller('EmailCtrl', ['$scope', '$http', function($scope, $http){
   //console.log("Email Controller called");
+}]);
+
+MyFol.controller('TutorialsCtrl', ['$scope', '$http', function($scope, $http){
+  //tutorial will parse out json from my codeigniter folder
 }]);
 
 MyFol.controller('TestBookingsCtrl', ['$scope', '$http', function($scope, $http){
@@ -121,6 +121,81 @@ MyFol.controller('ClasslistCtrl', ['$scope', '$http', function($scope, $http){
 		console.log($scope.courses);
 
 	});
+}]);
+
+MyFol.controller('ContentCtrl', ['$scope', '$http', function($scope, $http){
+  //console.log("Email Controller called");
+    //hides the course dropdown
+  $scope.IsVisible = false;
+
+  $scope.ShowHide = function () {
+   //if visible it will hide 
+  $scope.IsVisible = $scope.IsVisible ? false : true;
+  }
+
+  $scope.LinksVisible = false;
+
+  $scope.ShowHide2 = function () {
+    $scope.LinksVisible = $scope.LinksVisible ? false : true;
+  }
+    $http.get('../index.php/user/courses').success(function(data){
+    $scope.courses = data;
+
+    console.log($scope.courses);
+
+  });
+}]);
+
+MyFol.controller('DiscussionCtrl', ['$scope', '$http', function($scope, $http){
+  //console.log("Email Controller called");
+    //hides the course dropdown
+  $scope.IsVisible = false;
+
+  $scope.ShowHide = function () {
+   //if visible it will hide 
+  $scope.IsVisible = $scope.IsVisible ? false : true;
+  }
+
+  $scope.LinksVisible = false;
+
+  $scope.ShowHide2 = function () {
+    $scope.LinksVisible = $scope.LinksVisible ? false : true;
+  }
+
+    $http.get('../index.php/user/courses').success(function(data){
+    $scope.courses = data;
+
+    console.log($scope.courses);
+
+  });
+}]);
+
+MyFol.controller('GradesCtrl', ['$scope', '$http', function($scope, $http){
+  //console.log("Email Controller called");
+    //hides the course dropdown
+  $scope.IsVisible = false;
+
+  $scope.ShowHide = function () {
+   //if visible it will hide 
+  $scope.IsVisible = $scope.IsVisible ? false : true;
+  }
+
+  $scope.LinksVisible = false;
+
+  $scope.ShowHide2 = function () {
+    $scope.LinksVisible = $scope.LinksVisible ? false : true;
+  }
+
+    $http.get('../index.php/user/courses').success(function(data){
+    $scope.courses = data;
+
+    console.log($scope.courses);
+
+  });
+}]);
+
+MyFol.controller('AlertCtrl', ['$scope', '$http', function($scope, $http){
+  
 }]);
 
 MyFol.controller('CalendarCtrl', ['$scope', '$filter', '$http', '$q', function($scope, $filter, $http, $q){
